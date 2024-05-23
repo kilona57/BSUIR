@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+    <META HTTP-EQUIV="Content-Language" CONTENT="ru">
+    <title>Тест №12</title>
+</head>
+
+<body>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript" src="../check.js"></script>
+<script type="text/javascript">
+    var answers = [2, 0, 2, 1, 2, 0, 2];
+</script>
+
+<form id="form1" name="form1" method="post" action="">
+    <div id="answers">
+    </div>
+    <div align="center">
+        <strong>Тест №12 </strong></div>
+
+    <!--1 вопрос -->
+    <p>1. Перечислите направления КГ?<br>
+        <label>
+            <input id="10" type="radio" name="RadioGroup1" value="radio"/>
+            изобразительная компьютерная графика.</label>
+        <br/>
+        <label>
+            <input id="11" type="radio" name="RadioGroup1" value="radio"/>
+            изобразительная компьютерная графика, обработка и анализ изображений.</label>
+            <br/>
+        <label>
+            <input id="12" type="radio" name="RadioGroup1" value="radio"/>
+            изобразительная компьютерная графика, обработка и анализ изображений,  анализ сцен, компьютерная графика для научных абстракций.
+</label>
+    </p>
+
+    <!--2 вопрос -->
+    <p>2. Что такое когнитивная компьютерная графика?<br>
+        <label>
+            <input id="20" type="radio" name="RadioGroup2" value="radio"/>
+            компьютерная графика для научных абстракций, способствующая рождению нового научного знания. </label>
+        <br/>
+        <label>
+            <input id="21" type="radio" name="RadioGroup2" value="radio"/>
+             компьютерная графика для научных абстракций, не способствующая рождению нового научного знания. </label>
+   <br/>        
+<label>
+            <input id="22" type="radio" name="RadioGroup2" value="radio"/>
+            компьютерная графика для научных абстракций, способствующая возрождению старого научного знания. </label>
+    </p>
+
+    <!--3 вопрос -->
+    <p>3. Что выделяет разведочный анализ? <br>
+        <label>
+            <input id="30" type="radio" name="RadioGroup3" value="radio"/>
+            особенности исходных данных.</label>
+        <br/>
+        <label>
+            <input id="31" type="radio" name="RadioGroup3" value="radio"/>
+            структуру исходных данных.</label><br/>
+        <label>
+            <input id="32" type="radio" name="RadioGroup3" value="radio"/>
+            структуру, особенности исходных данных.</label>
+    </p>
+
+    <!--4 вопрос -->
+    <p>4. Что представляет собой график в виде «ящика с усами»?*<br/>
+        <label>
+            <input id="40" type="radio" name="RadioGroup4" value="radio"/>
+            метод отображения переменных.</label>
+        <br/>
+        <label>
+            <input id="41" type="radio" name="RadioGroup4" value="radio"/>
+            метод отображения распределения переменных.</label>
+        <br/>
+        <label>
+            <input id="42" type="radio" name="RadioGroup4" value="radio"/>
+            метод отображения распределения констант.
+        </label>
+    </p>
+
+    <!--5 вопрос -->
+    <p>5. Перечислите правильные синонимы термина «диаграммы рассеивания». <br/>
+        <label>
+            <input id="50" type="radio" name="RadioGroup5" value="radio"/>
+            «диаграмма разброса».</label>
+        <br/>
+        <label>
+            <input id="51" type="radio" name="RadioGroup5" value="radio"/>
+           «скаттерограмма».</label>
+        <br/>
+        <label>
+            <input id="52" type="radio" name="RadioGroup5" value="radio"/>
+            «диаграмма разброса», «скаттерограмма».
+        </label>
+    </p>
+
+    <!--6 вопрос -->
+    <p>6. В каких случаях целесообразно использовать трехмерные изображения? <br/>
+        <label>
+            <input id="60" type="radio" name="RadioGroup6" value="radio"/>
+           для представления сложных зависимостей.</label>
+        <br/>
+        <label>
+            <input id="61" type="radio" name="RadioGroup6" value="radio"/>
+           для представления простых зависимостей.</label>
+        <br/>
+        <label>
+            <input id="62" type="radio" name="RadioGroup6" value="radio"/>
+          для представления структуры классов в дискриминантном анализе 
+        </label>
+    </p>
+
+    <!--7 вопрос -->
+    <p>7. В каких случаях целесообразно использовать матричные диаграммы рассеивания? <br/>
+        <label>
+            <input id="70" type="radio" name="RadioGroup7" value="radio"/>
+            для представления сложных зависимостей.</label>
+        <br/>
+        <label>
+            <input id="71" type="radio" name="RadioGroup7" value="radio"/>
+            для представления простых зависимостей.</label>
+        <br/>
+        <label>
+            <input id="72" type="radio" name="RadioGroup7" value="radio"/>
+            для представления структуры классов в дискриминантном анализе 
+        </label>
+        
+    </p>
+
+
+    <input type="button" name="Submit" value="проверка" onclick="check(7)"/>
+
+
+</form>
+</body>
+</html>

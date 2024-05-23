@@ -1,0 +1,366 @@
+<!-- (C) 2004-06 Nick G Shchetko, Anatoly A Matveev for Military Faculty, BSUIR -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<title>Лабораторная работа №3</title>
+<base target="_top">
+</HEAD><BODY>
+<div align="center">
+  <p><strong>Лабораторная работа №3</strong></p>
+</div>
+<p><strong>Тема:</strong></p>
+<p>Построение кривых.</p>
+<p><strong>Задание:</strong></p>
+<p>Разработать элементарный графический редактор, реализующий построение параметрических кривых, используя форму Эрмита(<a href="../../programs/lb3/PErmit.exe" target="_new">см. пример</a>), форму Безье(<a href="../../programs/lb3/PBeze.exe" target="_new">см. пример</a>) и B-сплайн(<a href="../../programs/lb3/PSplain.exe" target="_new">см. пример</a>). Выбор метода задается из пункта меню и доступно через панель инструментов «Кривые». В редакторе должен быть предусмотрен режим корректировки опорных точек и состыковка сегментов. В программной реализации необходимо реализовать базовые функции матричных вычислений.</p>
+<p><strong>Теоретические сведения:</strong></p>
+<a href="../../../Теория/content/lk4/lk4.htm">См.тему №4.</a>
+<div class=Section1>
+<p><strong>Упражнения для самостоятельной работы:</strong></p>
+
+<p>Упражнение 5.1. Постройте сегмент кривой, используя
+форму Эрмита для следующих граничных условий:</p>
+
+<p><![if !supportLists]><span
+lang=EN-US style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'><span
+style='mso-list:Ignore'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-US style='font-size:12.0pt;
+line-height:90%;mso-ansi-language:EN-US'>P<sub>1</sub>(0,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>0),&nbsp;<span
+style='mso-spacerun:yes'>  </span>P<sub>4</sub>(4,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>0),&nbsp;&nbsp;R<sub>1</sub>(1,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>1), &nbsp;</span><span
+lang=EN-US style='font-size:12.0pt;line-height:90%'> </span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>R<sub>4</sub>(1,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>0).<o:p></o:p></span></p>
+
+<p><![if !supportLists]><span
+lang=EN-US style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'><span
+style='mso-list:Ignore'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-US style='font-size:12.0pt;
+line-height:90%;mso-ansi-language:EN-US'>P<sub>1</sub>(0,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>0),&nbsp;&nbsp;
+P<sub>4</sub>(3,</span><span style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span
+lang=EN-US style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>5),&nbsp;&nbsp;R<sub>1</sub>(1,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>1), &nbsp;</span><span
+lang=EN-US style='font-size:12.0pt;line-height:90%'> </span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>R<sub>4</sub>(0,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;–</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>1).<o:p></o:p></span></p>
+
+<p><![if !supportLists]><span
+lang=EN-US style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'><span
+style='mso-list:Ignore'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-US style='font-size:12.0pt;
+line-height:90%;mso-ansi-language:EN-US'>P<sub>1</sub>(0,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>0),<span
+style='mso-spacerun:yes'>   </span>P<sub>4</sub>(3,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>0),<span
+style='mso-spacerun:yes'>  </span>R<sub>1</sub>(0,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>1),<span
+style='mso-spacerun:yes'>  </span></span><span lang=EN-US style='font-size:
+12.0pt;line-height:90%'><span style='mso-spacerun:yes'> </span></span><span
+lang=EN-US style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>R<sub>4</sub>(1,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>0).<o:p></o:p></span></p>
+
+<p><![if !supportLists]><span
+lang=EN-US style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'><span
+style='mso-list:Ignore'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-US style='font-size:12.0pt;
+line-height:90%;mso-ansi-language:EN-US'>P<sub>1</sub>(0,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>0),&nbsp;&nbsp;
+P<sub>4</sub>(4,</span><span style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span
+lang=EN-US style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>4),&nbsp;&nbsp;R<sub>1</sub>(0,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>1), &nbsp;</span><span
+lang=EN-US style='font-size:12.0pt;line-height:90%'> </span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>R<sub>4</sub>(0,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;–</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>1).<o:p></o:p></span></p>
+
+<p 
+margin-left:0cm;text-indent:35.45pt;line-height:90%;mso-list:l0 level1 lfo1;
+tab-stops:list 39.7pt left 42.55pt;text-autospace:ideograph-numeric'><![if !supportLists]><span
+lang=EN-US style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'><span
+style='mso-list:Ignore'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-US style='font-size:12.0pt;
+line-height:90%;mso-ansi-language:EN-US'>P<sub>1</sub>(0,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>0),&nbsp;&nbsp;
+P<sub>4</sub>(4,</span><span style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span
+lang=EN-US style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>4),&nbsp;&nbsp;R<sub>1</sub>(0,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>1), &nbsp;</span><span
+lang=EN-US style='font-size:12.0pt;line-height:90%'> </span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>R<sub>4</sub>(0,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;–</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>1).<o:p></o:p></span></p>
+
+<p 
+margin-left:0cm;text-indent:35.45pt;line-height:90%;mso-list:l0 level1 lfo1;
+tab-stops:list 39.7pt left 42.55pt;text-autospace:ideograph-numeric'><![if !supportLists]><span
+lang=EN-US style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'><span
+style='mso-list:Ignore'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-US style='font-size:12.0pt;
+line-height:90%;mso-ansi-language:EN-US'>P<sub>1</sub>(0,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>0),<span
+style='mso-spacerun:yes'>   </span>P<sub>4</sub>(3,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>5),&nbsp;&nbsp;&nbsp;R<sub>1</sub>(1,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>1), </span><span
+lang=EN-US style='font-size:12.0pt;line-height:90%'><span
+style='mso-spacerun:yes'> </span></span><span lang=EN-US style='font-size:12.0pt;
+line-height:90%;mso-ansi-language:EN-US'>R<sub>4</sub>(0,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;–</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>1).<o:p></o:p></span></p>
+
+<p 
+margin-left:0cm;text-indent:35.45pt;line-height:90%;mso-list:l0 level1 lfo1;
+tab-stops:list 39.7pt left 42.55pt;text-autospace:ideograph-numeric'><![if !supportLists]><span
+lang=EN-US style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'><span
+style='mso-list:Ignore'>7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-US style='font-size:12.0pt;
+line-height:90%;mso-ansi-language:EN-US'>P<sub>1</sub>(0,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>0),&nbsp;&nbsp;
+P<sub>4</sub>(4,</span><span style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span
+lang=EN-US style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>0),&nbsp;&nbsp;
+R<sub>1</sub>(0,</span><span style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span
+lang=EN-US style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>1),
+</span><span lang=EN-US style='font-size:12.0pt;line-height:90%'><span
+style='mso-spacerun:yes'> </span></span><span lang=EN-US style='font-size:12.0pt;
+line-height:90%;mso-ansi-language:EN-US'>R<sub>4</sub>(1,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>0).<o:p></o:p></span></p>
+
+<p 
+margin-left:0cm;text-indent:35.45pt;line-height:90%;mso-list:l0 level1 lfo1;
+tab-stops:list 39.7pt left 42.55pt;text-autospace:ideograph-numeric'><![if !supportLists]><span
+lang=EN-US style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'><span
+style='mso-list:Ignore'>8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-US style='font-size:12.0pt;
+line-height:90%;mso-ansi-language:EN-US'>P<sub>1</sub>(0,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>0),&nbsp;&nbsp;
+P<sub>4</sub>(4,</span><span style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span
+lang=EN-US style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>0),&nbsp;&nbsp;&nbsp;R<sub>1</sub>(1,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>1), &nbsp;R<sub>4</sub>(1,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>1).<o:p></o:p></span></p>
+
+<p>Упражнение 5.2.</span></span> <span
+style='font-size:12.0pt;line-height:150%'>Постройте сегмент кривой Безье для
+следующих граничных условий:<o:p></o:p></span></p>
+
+<p 
+margin-left:0cm;text-indent:35.45pt;line-height:90%;mso-list:l2 level1 lfo2;
+tab-stops:list 39.7pt left 42.55pt;text-autospace:ideograph-numeric'><![if !supportLists]><span
+style='font-size:12.0pt;line-height:90%'><span style='mso-list:Ignore'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span class=GramE><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>P</span><sub><span
+style='font-size:12.0pt;line-height:90%'>1</span></sub><span style='font-size:
+12.0pt;line-height:90%'>(</span></span><span style='font-size:12.0pt;
+line-height:90%'>0,&nbsp;0),</span><span lang=EN-US style='font-size:12.0pt;
+line-height:90%;mso-ansi-language:EN-US'>&nbsp;&nbsp;&nbsp;P</span><sub><span
+style='font-size:12.0pt;line-height:90%'>2</span></sub><span style='font-size:
+12.0pt;line-height:90%'>(3,&nbsp;7),</span><span lang=EN-US style='font-size:
+12.0pt;line-height:90%;mso-ansi-language:EN-US'>&nbsp;&nbsp;</span><span
+lang=EN-US style='font-size:12.0pt;line-height:90%'> </span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>P</span><sub><span
+style='font-size:12.0pt;line-height:90%'>3</span></sub><span style='font-size:
+12.0pt;line-height:90%'>(2,&nbsp;0), </span><span lang=EN-US style='font-size:
+12.0pt;line-height:90%;mso-ansi-language:EN-US'>&nbsp;&nbsp;P</span><sub><span
+style='font-size:12.0pt;line-height:90%'>4</span></sub><span style='font-size:
+12.0pt;line-height:90%'>(5,&nbsp;5).<o:p></o:p></span></p>
+
+<p 
+margin-left:0cm;text-indent:35.45pt;line-height:90%;mso-list:l2 level1 lfo2;
+tab-stops:list 39.7pt left 42.55pt;text-autospace:ideograph-numeric'><![if !supportLists]><span
+lang=EN-US style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'><span
+style='mso-list:Ignore'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span class=GramE><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>P<sub>1</sub>(</span></span><span
+lang=EN-US style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>0,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>0),&nbsp;&nbsp;&nbsp;P<sub>2</sub>(5,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>2),&nbsp;&nbsp;&nbsp;P<sub>3</sub>(2,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>5),
+&nbsp;&nbsp;P<sub>4</sub>(1,</span><span style='font-size:12.0pt;line-height:
+90%'>&nbsp;</span><span lang=EN-US style='font-size:12.0pt;line-height:90%;
+mso-ansi-language:EN-US'>0).<o:p></o:p></span></p>
+
+<p 
+margin-left:0cm;text-indent:35.45pt;line-height:90%;mso-list:l2 level1 lfo2;
+tab-stops:list 39.7pt left 42.55pt;text-autospace:ideograph-numeric'><![if !supportLists]><span
+lang=EN-US style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'><span
+style='mso-list:Ignore'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span class=GramE><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>P<sub>1</sub>(</span></span><span
+lang=EN-US style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>0,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>0),&nbsp;&nbsp;&nbsp;P<sub>2</sub>(1,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>5),&nbsp;&nbsp;
+P<sub>3</sub>(2,</span><span style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span
+lang=EN-US style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>0),&nbsp;&nbsp;&nbsp;P<sub>4</sub>(3,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>3).<o:p></o:p></span></p>
+
+<p 
+margin-left:0cm;text-indent:35.45pt;line-height:90%;mso-list:l2 level1 lfo2;
+tab-stops:list 39.7pt left 42.55pt;text-autospace:ideograph-numeric'><![if !supportLists]><span
+lang=EN-US style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'><span
+style='mso-list:Ignore'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span class=GramE><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>P<sub>1</sub>(</span></span><span
+lang=EN-US style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>0,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>0),&nbsp;&nbsp;&nbsp;P<sub>2</sub>(1,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>1),&nbsp;&nbsp;&nbsp;P<sub>3</sub>(2,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>1),
+&nbsp;&nbsp;P<sub>4</sub>(1,</span><span style='font-size:12.0pt;line-height:
+90%'>&nbsp;</span><span lang=EN-US style='font-size:12.0pt;line-height:90%;
+mso-ansi-language:EN-US'>0).<o:p></o:p></span></p>
+
+<p 
+margin-left:0cm;text-indent:35.45pt;line-height:90%;mso-list:l2 level1 lfo2;
+tab-stops:list 39.7pt left 42.55pt'><![if !supportLists]><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'><span
+style='mso-list:Ignore'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span class=GramE><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>P<sub>1</sub>(</span></span><span
+lang=EN-US style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>0,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>0),&nbsp;&nbsp;&nbsp;P<sub>2</sub>(0,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>1),&nbsp;&nbsp;&nbsp;P<sub>3</sub>(1,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>0),
+&nbsp;&nbsp;P<sub>4</sub>(2,</span><span style='font-size:12.0pt;line-height:
+90%'>&nbsp;</span><span lang=EN-US style='font-size:12.0pt;line-height:90%;
+mso-ansi-language:EN-US'>1).<o:p></o:p></span></p>
+
+<p 
+margin-left:0cm;text-indent:35.45pt;line-height:90%;mso-list:l2 level1 lfo2;
+tab-stops:list 39.7pt left 42.55pt;text-autospace:ideograph-numeric'><![if !supportLists]><span
+lang=EN-US style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'><span
+style='mso-list:Ignore'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span class=GramE><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>P<sub>1</sub>(</span></span><span
+lang=EN-US style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>0,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>0),&nbsp;&nbsp;&nbsp;P<sub>2</sub>(1,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>0),&nbsp;&nbsp;&nbsp;P<sub>3</sub>(2,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>0),
+&nbsp;&nbsp;P<sub>4</sub>(2,&nbsp;1).<o:p></o:p></span></p>
+
+<p 
+margin-left:0cm;text-indent:35.45pt;line-height:90%;mso-list:l2 level1 lfo2;
+tab-stops:list 39.7pt left 42.55pt;text-autospace:ideograph-numeric'><![if !supportLists]><span
+lang=EN-US style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'><span
+style='mso-list:Ignore'>7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span class=GramE><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>P<sub>1</sub>(</span></span><span
+lang=EN-US style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>0,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>0),&nbsp;&nbsp;&nbsp;P<sub>2</sub>(1</span><span
+style='font-size:12.0pt;line-height:90%'>0</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>,</span><span
+style='font-size:12.0pt;line-height:90%'>&nbsp;1</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>),&nbsp;&nbsp;&nbsp;P<sub>3</sub>(</span><span
+style='font-size:12.0pt;line-height:90%'>3</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>,</span>&nbsp;<span
+style='font-size:12.0pt;line-height:90%'>8</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>), &nbsp; P<sub>4</sub>(</span><span
+style='font-size:12.0pt;line-height:90%'>5</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>,&nbsp;</span><span
+style='font-size:12.0pt;line-height:90%'>0</span><span lang=EN-US
+style='font-size:12.0pt;line-height:90%;mso-ansi-language:EN-US'>).<o:p></o:p></span></p>
+
+<p >Упражнение 5.3.</span></span> <span
+style='font-size:12.0pt;line-height:150%'>Постройте </span><span lang=EN-US
+style='font-size:12.0pt;line-height:150%;mso-ansi-language:EN-US'>B</span><span
+style='font-size:12.0pt;line-height:150%'>-сплайн по следующему множеству исходных
+точек:</span></p>
+
+<p>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;line-height:130%'>(0,</span><span
+lang=EN-US style='font-size:12.0pt;line-height:130%;mso-ansi-language:EN-US'>&nbsp;</span><span
+style='font-size:12.0pt;line-height:130%'>0), (5,&nbsp;5), (2,&nbsp;1), (3,</span><span
+lang=EN-US style='font-size:12.0pt;line-height:130%;mso-ansi-language:EN-US'>&nbsp;</span><span
+style='font-size:12.0pt;line-height:130%'>7).<o:p></o:p></span></p>
+
+<p>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;line-height:130%'>(0,</span><span
+lang=EN-US style='font-size:12.0pt;line-height:130%;mso-ansi-language:EN-US'>&nbsp;</span><span
+style='font-size:12.0pt;line-height:130%'>0), (3,&nbsp;3), (2,&nbsp;1), (3,</span><span
+lang=EN-US style='font-size:12.0pt;line-height:130%;mso-ansi-language:EN-US'>&nbsp;</span><span
+style='font-size:12.0pt;line-height:130%'>6).<o:p></o:p></span></p>
+
+<p>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;line-height:130%'>(0,</span><span
+lang=EN-US style='font-size:12.0pt;line-height:130%;mso-ansi-language:EN-US'>&nbsp;</span><span
+style='font-size:12.0pt;line-height:130%'>0), (5,&nbsp;4), (2,&nbsp;1), (3,</span><span
+lang=EN-US style='font-size:12.0pt;line-height:130%;mso-ansi-language:EN-US'>&nbsp;</span><span
+style='font-size:12.0pt;line-height:130%'>6).<o:p></o:p></span></p>
+
+<p>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;line-height:130%'>(0,&nbsp;0),
+(1,&nbsp;2), (3,&nbsp;3), (2,</span><span lang=EN-US style='font-size:12.0pt;
+line-height:130%;mso-ansi-language:EN-US'>&nbsp;</span><span style='font-size:
+12.0pt;line-height:130%'>1).<o:p></o:p></span></p>
+
+<p>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;line-height:130%'>(0,&nbsp;0),
+(1,&nbsp;3), (2,&nbsp;1), (3,</span><span lang=EN-US style='font-size:12.0pt;
+line-height:130%;mso-ansi-language:EN-US'>&nbsp;</span><span style='font-size:
+12.0pt;line-height:130%'>3).<o:p></o:p></span></p>
+
+<p>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;line-height:130%'>(0,&nbsp;0),
+(3,&nbsp;3), (1,</span><span lang=EN-US style='font-size:12.0pt;line-height:
+130%;mso-ansi-language:EN-US'>&nbsp;</span><span style='font-size:12.0pt;
+line-height:130%'>2), (2,</span><span lang=EN-US style='font-size:12.0pt;
+line-height:130%;mso-ansi-language:EN-US'>&nbsp;</span><span style='font-size:
+12.0pt;line-height:130%'>2).<o:p></o:p></span></p>
+
+<p>7.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<![endif]><span style='font-size:12.0pt;line-height:130%'>(0,&nbsp;0),
+(1,&nbsp;1), (2,</span><span lang=EN-US style='font-size:12.0pt;line-height:
+130%;mso-ansi-language:EN-US'>&nbsp;</span><span style='font-size:12.0pt;
+line-height:130%'>1), (3,</span><span lang=EN-US style='font-size:12.0pt;
+line-height:130%;mso-ansi-language:EN-US'>&nbsp;</span><span style='font-size:
+12.0pt;line-height:130%'>3).<o:p></o:p></span></p>
+
+</div>
+</BODY>
+</HTML>

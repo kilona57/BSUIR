@@ -1,0 +1,911 @@
+<!-- (C) 2004-06 Nick G Shchetko, Anatoly A Matveev for Military Faculty, BSUIR -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<title>Лабораторная работа №2</title>
+<base target="_top">
+</HEAD><BODY>
+<div align="center">
+  <p><strong>Лабораторная работа № 2</strong></p>
+</div>
+<p><strong>Тема:</strong></p>
+<p>Генерация кривых второго порядка.</p>
+<p><strong>Задание:</strong></p>
+<p>Разработать элементарный графический редактор, реализующий построение линий второго порядка: окружность (<a href="../../programs/lb2/PRound.exe" target="_new">см. пример</a>), эллипс(<a href="../../programs/lb2/PElipse.exe" target="_new">см. пример</a>), гипербола(<a href="../../programs/lb2/PGiperbola.exe" target="_new">см. пример</a>), парабола(<a href="../../programs/lb2/PParab.exe" target="_new">см. пример</a>). Выбор кривой задается из пункта меню и доступно через панель инструментов «Линии второго порядка». В редакторе кроме режима генерации линий второго порядка в пользовательском окне должен быть предусмотрен отладочный режим, где отображается пошаговое решение на дискретной сетке.</p>
+<p><strong>Теоретические сведения:</strong></p>
+<a href="../../../Теория/content/lk4/lk4.htm">См.тему №4.</a>
+<div class=Section1>
+<p><strong>Упражнения для самостоятельной работы:</strong></p>
+
+<p>Упражнение 4.1. Разработайте
+алгоритм генерации окружности в первом квадранте и представьте результаты
+пошагового выполнения алгоритма для окружности<span style='mso-spacerun:yes'> 
+</span>радиусом <i style='mso-bidi-font-style:normal'>R</i> с центром в начале
+координат (рассмотрите случаи <i style='mso-bidi-font-style:normal'>R&nbsp;</i>=&nbsp;7,
+<i style='mso-bidi-font-style:normal'>R</i></span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:12.0pt;
+line-height:150%;mso-ansi-language:EN-US'>&nbsp;</span></i><span
+style='font-size:12.0pt;mso-bidi-font-size:12.0pt;line-height:150%'>=</span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:12.0pt;line-height:150%;
+mso-ansi-language:EN-US'>&nbsp;</span><span style='font-size:12.0pt;mso-bidi-font-size:
+12.0pt;line-height:150%'>9, <i style='mso-bidi-font-style:normal'>R</i></span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-size:12.0pt;
+mso-bidi-font-size:12.0pt;line-height:150%;mso-ansi-language:EN-US'>&nbsp;</span></i><span
+style='font-size:12.0pt;mso-bidi-font-size:12.0pt;line-height:150%'>=</span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:12.0pt;line-height:150%;
+mso-ansi-language:EN-US'>&nbsp;</span><span style='font-size:12.0pt;mso-bidi-font-size:
+12.0pt;line-height:150%'>10). Результаты представьте в виде таблицы.<o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=650
+ style='width:487.35pt;border-collapse:collapse;border:none;mso-border-alt:
+ solid windowtext .5pt;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=92 valign=top style='width:69.2pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>Шаг <br>
+  итерации</p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  style='font-family:Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman";mso-char-type:symbol;mso-symbol-font-family:Symbol'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>D</span></span><span
+  class=SpellE><i style='mso-bidi-font-style:normal'><sub><span lang=EN-US
+  style='mso-ansi-language:EN-US'>i</span></sub></i></span><span lang=EN-US
+  style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:1.0pt;text-align:center;
+  text-indent:-1.0pt;line-height:150%'><i style='mso-bidi-font-style:normal'><span
+  style='font-family:Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman";mso-char-type:symbol;mso-symbol-font-family:Symbol'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>d</span></span><o:p></o:p></i></p>
+  </td>
+  <td width=66 valign=top style='width:49.65pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><i
+  style='mso-bidi-font-style:normal'><span style='font-family:Symbol;
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+  mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+  symbol;mso-symbol-font-family:Symbol'>d</span></span></i><i style='mso-bidi-font-style:
+  normal'><span lang=EN-US style='mso-ansi-language:EN-US'>*<o:p></o:p></span></i></p>
+  </td>
+  <td width=76 valign=top style='width:2.0cm;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:1.7pt;
+  line-height:150%'>Пиксель</p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><i
+  style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-ansi-language:
+  EN-US'>x<o:p></o:p></span></i></p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><i
+  style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-ansi-language:
+  EN-US'>y<o:p></o:p></span></i></p>
+  </td>
+  <td width=66 valign=top style='width:49.65pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:1.65pt;
+  line-height:150%'><sub><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+   coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+   filled="f" stroked="f">
+   <v:stroke joinstyle="miter"/>
+   <v:formulas>
+    <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+    <v:f eqn="sum @0 1 0"/>
+    <v:f eqn="sum 0 0 @1"/>
+    <v:f eqn="prod @2 1 2"/>
+    <v:f eqn="prod @3 21600 pixelWidth"/>
+    <v:f eqn="prod @3 21600 pixelHeight"/>
+    <v:f eqn="sum @0 0 1"/>
+    <v:f eqn="prod @6 1 2"/>
+    <v:f eqn="prod @7 21600 pixelWidth"/>
+    <v:f eqn="sum @8 21600 0"/>
+    <v:f eqn="prod @7 21600 pixelHeight"/>
+    <v:f eqn="sum @10 21600 0"/>
+   </v:formulas>
+   <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+   <o:lock v:ext="edit" aspectratio="t"/>
+  </v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:27pt;
+   height:14.25pt' o:ole="">
+   <v:imagedata src="../../images/lb2/image001.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=36 height=19
+  src="../../images/lb2/image002.gif" v:shapes="_x0000_i1025"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1025"
+    DrawAspect="Content" ObjectID="_1365887775">
+   </o:OLEObject>
+  </xml><![endif]--><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=85 valign=top style='width:63.75pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='mso-ansi-language:EN-US'>Plot (<i style='mso-bidi-font-style:
+  normal'>x</i>, <i style='mso-bidi-font-style:normal'>y</i>)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=92 valign=top style='width:69.2pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:1.0pt;text-align:center;
+  text-indent:-1.0pt;line-height:150%'><i style='mso-bidi-font-style:normal'><o:p>&nbsp;</o:p></i></p>
+  </td>
+  <td width=66 valign=top style='width:49.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><i
+  style='mso-bidi-font-style:normal'><o:p>&nbsp;</o:p></i></p>
+  </td>
+  <td width=76 valign=top style='width:2.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:1.7pt;
+  line-height:150%'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><i
+  style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-ansi-language:
+  EN-US'><o:p>&nbsp;</o:p></span></i></p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><i
+  style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-ansi-language:
+  EN-US'><o:p>&nbsp;</o:p></span></i></p>
+  </td>
+  <td width=66 valign=top style='width:49.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:1.65pt;
+  line-height:150%'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=85 valign=top style='width:63.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p >Приведите
+алгоритмическую оценку алгоритма.</p>
+
+<p >Упражнение 4.2. Разработайте
+алгоритм генерации эллипса в первом квадранте и представьте результаты
+пошагового выполнения алгоритма для эллипса с центром в начале координат
+(рассмотрите <span class=GramE>случай</span> <i style='mso-bidi-font-style:
+normal'>а</i></span><i style='mso-bidi-font-style:normal'><span lang=EN-US
+style='font-size:12.0pt;mso-bidi-font-size:12.0pt;line-height:130%;mso-ansi-language:
+EN-US'>&nbsp;</span></i><span style='font-size:12.0pt;mso-bidi-font-size:12.0pt;
+line-height:130%'>=</span><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:
+12.0pt;line-height:130%;mso-ansi-language:EN-US'>&nbsp;</span><span
+style='font-size:12.0pt;mso-bidi-font-size:12.0pt;line-height:130%'>5, </span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-size:12.0pt;
+mso-bidi-font-size:12.0pt;line-height:130%;mso-ansi-language:EN-US'>b&nbsp;</span></i><span
+style='font-size:12.0pt;mso-bidi-font-size:12.0pt;line-height:130%'>=</span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:12.0pt;line-height:130%;
+mso-ansi-language:EN-US'>&nbsp;</span><span style='font-size:12.0pt;mso-bidi-font-size:
+12.0pt;line-height:130%'>3). Результаты представьте в виде таблицы.<o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=650
+ style='width:487.35pt;border-collapse:collapse;border:none;mso-border-alt:
+ solid windowtext .5pt;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=92 valign=top style='width:69.2pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>шаг <br>
+  итерации</p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  style='font-family:Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman";mso-char-type:symbol;mso-symbol-font-family:Symbol'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>D</span></span><span
+  class=SpellE><i style='mso-bidi-font-style:normal'><sub><span lang=EN-US
+  style='mso-ansi-language:EN-US'>i</span></sub></i></span><span lang=EN-US
+  style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:1.0pt;text-align:center;
+  text-indent:-1.0pt;line-height:150%'><i style='mso-bidi-font-style:normal'><span
+  style='font-family:Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman";mso-char-type:symbol;mso-symbol-font-family:Symbol'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>d</span></span><o:p></o:p></i></p>
+  </td>
+  <td width=66 valign=top style='width:49.65pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><i
+  style='mso-bidi-font-style:normal'><span style='font-family:Symbol;
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+  mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+  symbol;mso-symbol-font-family:Symbol'>d</span></span></i><i style='mso-bidi-font-style:
+  normal'><span lang=EN-US style='mso-ansi-language:EN-US'>*<o:p></o:p></span></i></p>
+  </td>
+  <td width=76 valign=top style='width:2.0cm;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:1.7pt;
+  line-height:150%'>Пиксель</p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><i
+  style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-ansi-language:
+  EN-US'>x<o:p></o:p></span></i></p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><i
+  style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-ansi-language:
+  EN-US'>y<o:p></o:p></span></i></p>
+  </td>
+  <td width=66 valign=top style='width:49.65pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:1.65pt;
+  line-height:150%'><sub><!--[if gte vml 1]><v:shape id="_x0000_i1026" type="#_x0000_t75"
+   style='width:27pt;height:14.25pt' o:ole="">
+   <v:imagedata src="../../images/lb2/image001.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=36 height=19
+  src="../../images/lb2/image002.gif" v:shapes="_x0000_i1026"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1026"
+    DrawAspect="Content" ObjectID="_1365887776">
+   </o:OLEObject>
+  </xml><![endif]--><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=85 valign=top style='width:63.75pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='mso-ansi-language:EN-US'>Plot (<i style='mso-bidi-font-style:
+  normal'>x</i>, <i style='mso-bidi-font-style:normal'>y</i>)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=92 valign=top style='width:69.2pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:1.0pt;text-align:center;
+  text-indent:-1.0pt;line-height:150%'><i style='mso-bidi-font-style:normal'><o:p>&nbsp;</o:p></i></p>
+  </td>
+  <td width=66 valign=top style='width:49.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><i
+  style='mso-bidi-font-style:normal'><o:p>&nbsp;</o:p></i></p>
+  </td>
+  <td width=76 valign=top style='width:2.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:1.7pt;
+  line-height:150%'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><i
+  style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-ansi-language:
+  EN-US'><o:p>&nbsp;</o:p></span></i></p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><i
+  style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-ansi-language:
+  EN-US'><o:p>&nbsp;</o:p></span></i></p>
+  </td>
+  <td width=66 valign=top style='width:49.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:1.65pt;
+  line-height:150%'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=85 valign=top style='width:63.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p >Приведите алгоритмическую
+оценку алгоритма.<span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p >Упражнение 4.3. Разработайте
+алгоритм генерации гиперболы, заданной уравнением <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1027" type="#_x0000_t75" style='width:68.25pt;height:38.25pt'
+ o:ole="">
+ <v:imagedata src="../../images/lb2/image003.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=91 height=51
+src="../../images/lb2/image004.gif" v:shapes="_x0000_i1027"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1027"
+  DrawAspect="Content" ObjectID="_1365887777">
+ </o:OLEObject>
+</xml><![endif]-->, в первом квадранте и представьте результаты пошагового
+выполнения алгоритма<span style='mso-spacerun:yes'>  </span>с <span
+class=GramE>параметрами</span> <i style='mso-bidi-font-style:normal'>а</i></span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-size:12.0pt;
+mso-bidi-font-size:12.0pt;line-height:130%;mso-ansi-language:EN-US'>&nbsp;</span></i><span
+style='font-size:12.0pt;mso-bidi-font-size:12.0pt;line-height:130%'>=</span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:12.0pt;line-height:130%;
+mso-ansi-language:EN-US'>&nbsp;</span><span style='font-size:12.0pt;mso-bidi-font-size:
+12.0pt;line-height:130%'>3, </span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:12.0pt;line-height:130%;
+mso-ansi-language:EN-US'>b&nbsp;</span></i><span style='font-size:12.0pt;
+mso-bidi-font-size:12.0pt;line-height:130%'>=</span><span lang=EN-US
+style='font-size:12.0pt;mso-bidi-font-size:12.0pt;line-height:130%;mso-ansi-language:
+EN-US'>&nbsp;</span><span style='font-size:12.0pt;mso-bidi-font-size:12.0pt;
+line-height:130%'>5. Исследуйте вид кривой, результаты представьте в виде таблицы.<o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=650
+ style='width:487.35pt;border-collapse:collapse;border:none;mso-border-alt:
+ solid windowtext .5pt;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=92 valign=top style='width:69.2pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>шаг <br>
+  итерации</p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  style='font-family:Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman";mso-char-type:symbol;mso-symbol-font-family:Symbol'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>D</span></span><span
+  class=SpellE><i style='mso-bidi-font-style:normal'><sub><span lang=EN-US
+  style='mso-ansi-language:EN-US'>i</span></sub></i></span><span lang=EN-US
+  style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:1.0pt;text-align:center;
+  text-indent:-1.0pt;line-height:150%'><i style='mso-bidi-font-style:normal'><span
+  style='font-family:Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman";mso-char-type:symbol;mso-symbol-font-family:Symbol'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>d</span></span><o:p></o:p></i></p>
+  </td>
+  <td width=66 valign=top style='width:49.65pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><i
+  style='mso-bidi-font-style:normal'><span style='font-family:Symbol;
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+  mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+  symbol;mso-symbol-font-family:Symbol'>d</span></span></i><i style='mso-bidi-font-style:
+  normal'><span lang=EN-US style='mso-ansi-language:EN-US'>*<o:p></o:p></span></i></p>
+  </td>
+  <td width=76 valign=top style='width:2.0cm;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:1.7pt;
+  line-height:150%'>Пиксель</p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><i
+  style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-ansi-language:
+  EN-US'>x<o:p></o:p></span></i></p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><i
+  style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-ansi-language:
+  EN-US'>y<o:p></o:p></span></i></p>
+  </td>
+  <td width=66 valign=top style='width:49.65pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:1.65pt;
+  line-height:150%'><sub><!--[if gte vml 1]><v:shape id="_x0000_i1028" type="#_x0000_t75"
+   style='width:27pt;height:14.25pt' o:ole="">
+   <v:imagedata src="../../images/lb2/image001.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=36 height=19
+  src="../../images/lb2/image002.gif" v:shapes="_x0000_i1028"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1028"
+    DrawAspect="Content" ObjectID="_1365887778">
+   </o:OLEObject>
+  </xml><![endif]--><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=85 valign=top style='width:63.75pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='mso-ansi-language:EN-US'>Plot (<i style='mso-bidi-font-style:
+  normal'>x</i>, <i style='mso-bidi-font-style:normal'>y</i>)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=92 valign=top style='width:69.2pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:1.0pt;text-align:center;
+  text-indent:-1.0pt;line-height:150%'><i style='mso-bidi-font-style:normal'><o:p>&nbsp;</o:p></i></p>
+  </td>
+  <td width=66 valign=top style='width:49.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><i
+  style='mso-bidi-font-style:normal'><o:p>&nbsp;</o:p></i></p>
+  </td>
+  <td width=76 valign=top style='width:2.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:1.7pt;
+  line-height:150%'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><i
+  style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-ansi-language:
+  EN-US'><o:p>&nbsp;</o:p></span></i></p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><i
+  style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-ansi-language:
+  EN-US'><o:p>&nbsp;</o:p></span></i></p>
+  </td>
+  <td width=66 valign=top style='width:49.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:1.65pt;
+  line-height:150%'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=85 valign=top style='width:63.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p>Приведите
+алгоритмическую оценку алгоритма.</p>
+
+<p><span
+class=keyword><span style='color:windowtext'>Упражнение 4.4. </span></span><span
+style='font-size:12.0pt;mso-bidi-font-size:12.0pt;line-height:130%'>Разработайте
+алгоритм генерации гиперболы, заданной уравнением <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1029" type="#_x0000_t75" style='width:68.25pt;height:38.25pt'
+ o:ole="">
+ <v:imagedata src="../../images/lb2/image005.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=91 height=51
+src="../../images/lb2/image006.gif" v:shapes="_x0000_i1029"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1029"
+  DrawAspect="Content" ObjectID="_1365887780">
+ </o:OLEObject>
+</xml><![endif]-->, в первом квадранте и представьте результаты пошагового
+выполнения алгоритма с <span class=GramE>параметрами</span> <i
+style='mso-bidi-font-style:normal'>а</i></span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:12.0pt;
+line-height:130%;mso-ansi-language:EN-US'>&nbsp;</span></i><span
+style='font-size:12.0pt;mso-bidi-font-size:12.0pt;line-height:130%'>=</span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:12.0pt;line-height:130%;
+mso-ansi-language:EN-US'>&nbsp;</span><span style='font-size:12.0pt;mso-bidi-font-size:
+12.0pt;line-height:130%'>3, </span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:12.0pt;line-height:130%;
+mso-ansi-language:EN-US'>b&nbsp;</span></i><span style='font-size:12.0pt;
+mso-bidi-font-size:12.0pt;line-height:130%'>=</span><span lang=EN-US
+style='font-size:12.0pt;mso-bidi-font-size:12.0pt;line-height:130%;mso-ansi-language:
+EN-US'>&nbsp;</span><span style='font-size:12.0pt;mso-bidi-font-size:12.0pt;
+line-height:130%'>5. Исследуйте вид кривой, результаты представьте в виде таблицы.<o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=650
+ style='width:487.35pt;border-collapse:collapse;border:none;mso-border-alt:
+ solid windowtext .5pt;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=92 valign=top style='width:69.2pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>шаг <br>
+  итерации</p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  style='font-family:Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman";mso-char-type:symbol;mso-symbol-font-family:Symbol'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>D</span></span><span
+  class=SpellE><i style='mso-bidi-font-style:normal'><sub><span lang=EN-US
+  style='mso-ansi-language:EN-US'>i</span></sub></i></span><span lang=EN-US
+  style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:1.0pt;text-align:center;
+  text-indent:-1.0pt;line-height:150%'><i style='mso-bidi-font-style:normal'><span
+  style='font-family:Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman";mso-char-type:symbol;mso-symbol-font-family:Symbol'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>d</span></span><o:p></o:p></i></p>
+  </td>
+  <td width=66 valign=top style='width:49.65pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><i
+  style='mso-bidi-font-style:normal'><span style='font-family:Symbol;
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+  mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+  symbol;mso-symbol-font-family:Symbol'>d</span></span></i><i style='mso-bidi-font-style:
+  normal'><span lang=EN-US style='mso-ansi-language:EN-US'>*<o:p></o:p></span></i></p>
+  </td>
+  <td width=76 valign=top style='width:2.0cm;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:1.7pt;
+  line-height:150%'>Пиксель</p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><i
+  style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-ansi-language:
+  EN-US'>x<o:p></o:p></span></i></p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><i
+  style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-ansi-language:
+  EN-US'>y<o:p></o:p></span></i></p>
+  </td>
+  <td width=66 valign=top style='width:49.65pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:1.65pt;
+  line-height:150%'><sub><!--[if gte vml 1]><v:shape id="_x0000_i1030" type="#_x0000_t75"
+   style='width:27pt;height:14.25pt' o:ole="">
+   <v:imagedata src="../../images/lb2/image001.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=36 height=19
+  src="../../images/lb2/image002.gif" v:shapes="_x0000_i1030"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1030"
+    DrawAspect="Content" ObjectID="_1365887781">
+   </o:OLEObject>
+  </xml><![endif]--><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=85 valign=top style='width:63.75pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='mso-ansi-language:EN-US'>Plot (<i style='mso-bidi-font-style:
+  normal'>x</i>, <i style='mso-bidi-font-style:normal'>y</i>)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=92 valign=top style='width:69.2pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:1.0pt;text-align:center;
+  text-indent:-1.0pt;line-height:150%'><i style='mso-bidi-font-style:normal'><o:p>&nbsp;</o:p></i></p>
+  </td>
+  <td width=66 valign=top style='width:49.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><i
+  style='mso-bidi-font-style:normal'><o:p>&nbsp;</o:p></i></p>
+  </td>
+  <td width=76 valign=top style='width:2.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:1.7pt;
+  line-height:150%'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><i
+  style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-ansi-language:
+  EN-US'><o:p>&nbsp;</o:p></span></i></p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><i
+  style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-ansi-language:
+  EN-US'><o:p>&nbsp;</o:p></span></i></p>
+  </td>
+  <td width=66 valign=top style='width:49.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:1.65pt;
+  line-height:150%'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=85 valign=top style='width:63.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p >Приведите
+алгоритмическую оценку алгоритма.</p>
+
+<p ><span
+class=keyword><span style='color:windowtext'>Упражнение 4.5. </span></span><span
+style='font-size:12.0pt;mso-bidi-font-size:12.0pt;line-height:130%'>Разработайте
+алгоритм генерации гиперболы, заданной уравнением <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1031" type="#_x0000_t75" style='width:54pt;height:21pt' o:ole="">
+ <v:imagedata src="../../images/lb2/image007.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=72 height=28
+src="../../images/lb2/image008.gif" v:shapes="_x0000_i1031"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1031"
+  DrawAspect="Content" ObjectID="_1365887782">
+ </o:OLEObject>
+</xml><![endif]-->, в первом квадранте и представьте результаты пошагового
+выполнения алгоритма<span style='mso-spacerun:yes'>  </span>с параметром </span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-size:12.0pt;
+mso-bidi-font-size:12.0pt;line-height:130%;mso-ansi-language:EN-US'>p&nbsp;</span></i><span
+style='font-size:12.0pt;mso-bidi-font-size:12.0pt;line-height:130%'>=</span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:12.0pt;line-height:130%;
+mso-ansi-language:EN-US'>&nbsp;</span><span style='font-size:12.0pt;mso-bidi-font-size:
+12.0pt;line-height:130%'>8. Исследуйте вид кривой, результаты представьте в
+виде таблицы.<o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=650
+ style='width:487.35pt;border-collapse:collapse;border:none;mso-border-alt:
+ solid windowtext .5pt;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=92 valign=top style='width:69.2pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>шаг <br>
+  итерации</p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  style='font-family:Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman";mso-char-type:symbol;mso-symbol-font-family:Symbol'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>D</span></span><span
+  class=SpellE><i style='mso-bidi-font-style:normal'><sub><span lang=EN-US
+  style='mso-ansi-language:EN-US'>i</span></sub></i></span><span lang=EN-US
+  style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:1.0pt;text-align:center;
+  text-indent:-1.0pt;line-height:150%'><i style='mso-bidi-font-style:normal'><span
+  style='font-family:Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman";mso-char-type:symbol;mso-symbol-font-family:Symbol'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>d</span></span><o:p></o:p></i></p>
+  </td>
+  <td width=66 valign=top style='width:49.65pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><i
+  style='mso-bidi-font-style:normal'><span style='font-family:Symbol;
+  mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+  mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+  symbol;mso-symbol-font-family:Symbol'>d</span></span></i><i style='mso-bidi-font-style:
+  normal'><span lang=EN-US style='mso-ansi-language:EN-US'>*<o:p></o:p></span></i></p>
+  </td>
+  <td width=76 valign=top style='width:2.0cm;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:1.7pt;
+  line-height:150%'>Пиксель</p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><i
+  style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-ansi-language:
+  EN-US'>x<o:p></o:p></span></i></p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><i
+  style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-ansi-language:
+  EN-US'>y<o:p></o:p></span></i></p>
+  </td>
+  <td width=66 valign=top style='width:49.65pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:1.65pt;
+  line-height:150%'><sub><!--[if gte vml 1]><v:shape id="_x0000_i1032" type="#_x0000_t75"
+   style='width:27pt;height:14.25pt' o:ole="">
+   <v:imagedata src="../../images/lb2/image001.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=36 height=19
+  src="../../images/lb2/image002.gif" v:shapes="_x0000_i1032"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1032"
+    DrawAspect="Content" ObjectID="_1365887783">
+   </o:OLEObject>
+  </xml><![endif]--><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=85 valign=top style='width:63.75pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='mso-ansi-language:EN-US'>Plot (<i style='mso-bidi-font-style:
+  normal'>x</i>, <i style='mso-bidi-font-style:normal'>y</i>)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=92 valign=top style='width:69.2pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:1.0pt;text-align:center;
+  text-indent:-1.0pt;line-height:150%'><i style='mso-bidi-font-style:normal'><o:p>&nbsp;</o:p></i></p>
+  </td>
+  <td width=66 valign=top style='width:49.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><i
+  style='mso-bidi-font-style:normal'><o:p>&nbsp;</o:p></i></p>
+  </td>
+  <td width=76 valign=top style='width:2.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:1.7pt;
+  line-height:150%'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><i
+  style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-ansi-language:
+  EN-US'><o:p>&nbsp;</o:p></span></i></p>
+  </td>
+  <td width=66 valign=top style='width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><i
+  style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-ansi-language:
+  EN-US'><o:p>&nbsp;</o:p></span></i></p>
+  </td>
+  <td width=66 valign=top style='width:49.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;text-indent:1.65pt;
+  line-height:150%'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=85 valign=top style='width:63.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p>Приведите
+алгоритмическую оценку алгоритма.<span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+</div>
+</BODY>
+</HTML>

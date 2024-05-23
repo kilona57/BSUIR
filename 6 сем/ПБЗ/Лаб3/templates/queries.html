@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Результаты SPARQL запросов</title>
+    <!-- <link type="text/css" href="{{ url_for('static', filename='css/index.css')}}" rel="stylesheet" /> -->
+    <link type="text/css" href="{{ url_for('static', filename='css/queries.css')}}" rel="stylesheet" />
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Подклассы бактериальных инфекционных заболеваний</th>
+            <th>Заболевания</th>
+            <th>Поражаемый орган</th>
+            
+        </tr>
+        {% for row in diseases %}
+        <tr>
+            <td>{{ row.diseases_type }}</td>
+            <td>{{ row.disease }}</td>
+            <td>{{ row.organ }}</td>
+
+            
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <table>
+        <tr>
+            <th>Заболевания вызванные стрептококками</th>
+            <th>Орган</th>
+            <th>Система органов</th>
+        </tr>
+        {% for row in streptocoky %}
+        <tr>
+            <td>{{ row.disease }}</td>
+            <td>{{ row.organ }}</td>
+            <td>{{ row.organs_system }}</td>
+            
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <table>
+        <tr>
+            <th>Часть нервной системы</th>
+            <th>Количество органов</th>
+        </tr>
+        {% for row in count_organs %}
+        <tr>
+           
+            <td>{{ row.parts }}</td>
+            <td>{{ row.count_organs }}</td>      
+        </tr>
+        {% endfor %}
+    </table>
+    <div class="btn">
+    <button><a href="/">Главная страница</a></button>
+    </div>
+</body>
+</html>

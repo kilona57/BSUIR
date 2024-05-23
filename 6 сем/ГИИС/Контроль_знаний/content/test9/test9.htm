@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+    <META HTTP-EQUIV="Content-Language" CONTENT="ru">
+    <title>Тест №9</title>
+</head>
+
+<body>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript" src="../check.js"></script>
+<script type="text/javascript">
+    var answers = [2, 2, 0, 1, 1, 0];
+</script>
+
+<form id="form1" name="form1" method="post" action="">
+    <div id="answers">
+    </div>
+    <div align="center">
+        <strong>Тест №9 </strong></div>
+
+    <!--1 вопрос -->
+    <p>1. Какой свет воспринимает глаз человека?  <br>
+        <label>
+            <input id="10" type="radio" name="RadioGroup1" value="radio"/>
+            который отражает поверхность.</label>
+        <br/>
+        <label>
+            <input id="11" type="radio" name="RadioGroup1" value="radio"/>
+           который излучает поверхность.</label>
+<br/>
+        <label>
+            <input id="12" type="radio" name="RadioGroup1" value="radio"/>
+          который отражает или излучает поверхность.</label>
+    </p>
+
+    <!--2 вопрос -->
+    <p>2.  В чем состоит метод закрашивания Гуро?<br>
+        <label>
+            <input id="20" type="radio" name="RadioGroup2" value="radio"/>
+            с вершинами связываются паралелли, которые получаются в результате усреднения нормалей 
+многоугольников, параллельных этой вершине. </label>
+        <br/>
+        <label>
+            <input id="21" type="radio" name="RadioGroup2" value="radio"/>
+           с вершинами связываются паралелли, которые получаются в результате усреднения нормалей 
+многоугольников, пересекающихся в этой вершине. </label><br/>
+        <label>
+            <input id="22" type="radio" name="RadioGroup2" value="radio"/>
+            с вершинами связываются нормали, которые получаются в результате усреднения нормалей 
+многоугольников, пересекающихся в этой вершине. </label>
+    </p>
+
+    <!--3 вопрос -->
+    <p>3. Можно ли получить сглаженное изображение методом Гуро?<br>
+        <label>
+            <input id="30" type="radio" name="RadioGroup3" value="radio"/>
+           да</label>
+        <br/>
+        <label>
+            <input id="31" type="radio" name="RadioGroup3" value="radio"/>
+            нет</label>
+    </p>
+
+    <!--4 вопрос -->
+    <p>4. При методе Гуро сканирующая строка обязательно проходит через вершины многоугольника или нет?<br/>
+        <label>
+            <input id="40" type="radio" name="RadioGroup4" value="radio"/>
+            да</label>
+        <br/>
+        <label>
+            <input id="41" type="radio" name="RadioGroup4" value="radio"/>
+           нет</label>
+        
+    </p>
+
+    <!--5 вопрос -->
+    <p>5. Что интерполируется вдоль сканирующей строки при закраске методом Гуро?<br/>
+        <label>
+            <input id="50" type="radio" name="RadioGroup5" value="radio"/>
+            вектор нормали</label>
+        <br/>
+        <label>
+            <input id="51" type="radio" name="RadioGroup5" value="radio"/>
+            значение интенсивности</label>
+        <br/>
+        <label>
+            <input id="52" type="radio" name="RadioGroup5" value="radio"/>
+            направляющий вектор
+        </label>
+    </p>
+
+    <!--6 вопрос -->
+    <p>6. Что интерполируется вдоль сканирующей строки при закраске методом Фонга?<br/>
+        <label>
+            <input id="60" type="radio" name="RadioGroup6" value="radio"/>
+            вектор нормали</label>
+        <br/>
+        <label>
+            <input id="61" type="radio" name="RadioGroup6" value="radio"/>
+            значение интенсивности</label>
+        <br/>
+        <label>
+            <input id="62" type="radio" name="RadioGroup6" value="radio"/>
+             направляющий вектор
+
+        </label>
+    </p>
+
+
+    <input type="button" name="Submit" value="проверка" onclick="check(6)"/>
+
+
+</form>
+</body>
+</html>

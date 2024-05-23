@@ -1,0 +1,1317 @@
+Prefix(:=<http://www.semanticweb.org/hilona/ontologies/2024/2/untitled-ontology-13#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/hilona/ontologies/2024/2/untitled-ontology-13>
+
+Declaration(Class(:Бактериальная_пневмония))
+Declaration(Class(:Бактериальные_инфекционные_заболевания))
+Declaration(Class(:Бактериальный_менингит))
+Declaration(Class(:Бактерии))
+Declaration(Class(:Бациллы))
+Declaration(Class(:Болезнь))
+Declaration(Class(:Вибриллы))
+Declaration(Class(:Вирусные_инфекционные_заболевания))
+Declaration(Class(:Вирусы))
+Declaration(Class(:Возпалительные_заболевания_скелета))
+Declaration(Class(:Гепатит))
+Declaration(Class(:Дыхательная_система))
+Declaration(Class(:Заболевания_ЦНС))
+Declaration(Class(:Заболевания_анатамического_образования))
+Declaration(Class(:Заболевания_глаза))
+Declaration(Class(:Заболевания_дыхательной_системы))
+Declaration(Class(:Заболевания_желудка))
+Declaration(Class(:Заболевания_конъюктивы))
+Declaration(Class(:Заболевания_мочевыделительной_системы))
+Declaration(Class(:Заболевания_мочеточников))
+Declaration(Class(:Заболевания_нервной_системы))
+Declaration(Class(:Заболевания_опорно-двигательной_системы))
+Declaration(Class(:Заболевания_органов_чувств))
+Declaration(Class(:Заболевания_пищеварительной_системы))
+Declaration(Class(:Заболевания_скелета))
+Declaration(Class(:Зоболевания_легких))
+Declaration(Class(:Инфекционные_заболевания))
+Declaration(Class(:Кокки))
+Declaration(Class(:Конъюктивит))
+Declaration(Class(:Лимфатическая_система))
+Declaration(Class(:Менингит))
+Declaration(Class(:Мочевыделительная_система))
+Declaration(Class(:Нервная_система))
+Declaration(Class(:Опорно-двигательная_система))
+Declaration(Class(:Органы_чувств))
+Declaration(Class(:Остеомиелит))
+Declaration(Class(:ПНС))
+Declaration(Class(:Пищеварительная_система))
+Declaration(Class(:Пневмония))
+Declaration(Class(:Покровная_система))
+Declaration(Class(:Сердечно-сосудистая_система))
+Declaration(Class(:Симптомы))
+Declaration(Class(:Система_кровообращения))
+Declaration(Class(:Системы_органов))
+Declaration(Class(:Спириллы))
+Declaration(Class(:Функции_органов))
+Declaration(Class(:ЦНС))
+Declaration(ObjectProperty(:возбудитель))
+Declaration(ObjectProperty(:иметь_форму))
+Declaration(ObjectProperty(:иметь_функцию))
+Declaration(ObjectProperty(:осложнение))
+Declaration(ObjectProperty(:поражает))
+Declaration(ObjectProperty(:род))
+Declaration(ObjectProperty(:семейство))
+Declaration(ObjectProperty(:сопровождаается_симптом))
+Declaration(ObjectProperty(:состоит_из))
+Declaration(NamedIndividual(:Абсцесс_головного_мозга))
+Declaration(NamedIndividual(:Артерии))
+Declaration(NamedIndividual(:Бактериальный_гастрит))
+Declaration(NamedIndividual(:Бактериальный_конъюктивит))
+Declaration(NamedIndividual(:Боли_в_груди))
+Declaration(NamedIndividual(:Боли_в_эпигастральной_области))
+Declaration(NamedIndividual(:Боль_в_костях))
+Declaration(NamedIndividual(:Боль_в_мышцах))
+Declaration(NamedIndividual(:Боль_в_печени))
+Declaration(NamedIndividual(:Боль_в_суставах))
+Declaration(NamedIndividual(:Боль_при_глотании))
+Declaration(NamedIndividual(:Бронхи))
+Declaration(NamedIndividual(:Варолиев_мозг))
+Declaration(NamedIndividual(:Вены))
+Declaration(NamedIndividual(:Височная_кость))
+Declaration(NamedIndividual(:Внутреннее_ухо))
+Declaration(NamedIndividual(:Воспаление_кожи))
+Declaration(NamedIndividual(:Всасывательная))
+Declaration(NamedIndividual(:Газообмен))
+Declaration(NamedIndividual(:Ганглии))
+Declaration(NamedIndividual(:Гепаднавирус))
+Declaration(NamedIndividual(:Гепатит_D))
+Declaration(NamedIndividual(:Гепатит_E))
+Declaration(NamedIndividual(:Гепатит_А))
+Declaration(NamedIndividual(:Гепатит_В))
+Declaration(NamedIndividual(:Гепатит_С))
+Declaration(NamedIndividual(:Гепатовирус))
+Declaration(NamedIndividual(:Гладкие_мышцы))
+Declaration(NamedIndividual(:Глаза))
+Declaration(NamedIndividual(:Глотка))
+Declaration(NamedIndividual(:Глухость_сердечных_тонов))
+Declaration(NamedIndividual(:Глухота))
+Declaration(NamedIndividual(:Гноетечение))
+Declaration(NamedIndividual(:Головная_боль))
+Declaration(NamedIndividual(:Головной_мозг))
+Declaration(NamedIndividual(:Гортань))
+Declaration(NamedIndividual(:ДНК-вирус_гепатит_В))
+Declaration(NamedIndividual(:ДНК-вирус_оспы))
+Declaration(NamedIndividual(:Двенадцатиперстная_кишка))
+Declaration(NamedIndividual(:Двигательная))
+Declaration(NamedIndividual(:Желтушность_кожных_покровов))
+Declaration(NamedIndividual(:Желтушность_склер))
+Declaration(NamedIndividual(:Желудок))
+Declaration(NamedIndividual(:Желчный_пузырь))
+Declaration(NamedIndividual(:Защитная))
+Declaration(NamedIndividual(:Зубы))
+Declaration(NamedIndividual(:Зуд))
+Declaration(NamedIndividual(:Изжога))
+Declaration(NamedIndividual(:Изменение_цвета_кала))
+Declaration(NamedIndividual(:Изменение_цвета_мочи))
+Declaration(NamedIndividual(:Инфекция_мочевыводящих_путей))
+Declaration(NamedIndividual(:Ионорегулирующая))
+Declaration(NamedIndividual(:Иррадиация))
+Declaration(NamedIndividual(:Капилляры))
+Declaration(NamedIndividual(:Кашель))
+Declaration(NamedIndividual(:Кожа))
+Declaration(NamedIndividual(:Конечный_мозг))
+Declaration(NamedIndividual(:Конъюктива))
+Declaration(NamedIndividual(:Корь))
+Declaration(NamedIndividual(:Костный_мозг))
+Declaration(NamedIndividual(:Косточки))
+Declaration(NamedIndividual(:Кроветворная))
+Declaration(NamedIndividual(:Кровотечение))
+Declaration(NamedIndividual(:Легкие))
+Declaration(NamedIndividual(:Лимфатические_сосуды))
+Declaration(NamedIndividual(:Лимфопоэз))
+Declaration(NamedIndividual(:Лимфоузлы))
+Declaration(NamedIndividual(:Лихорадка))
+Declaration(NamedIndividual(:Менингококк))
+Declaration(NamedIndividual(:Менингококковый_менингит))
+Declaration(NamedIndividual(:Метаболистическая))
+Declaration(NamedIndividual(:Метеоризм))
+Declaration(NamedIndividual(:Мозговой_ствол))
+Declaration(NamedIndividual(:Мозжечок))
+Declaration(NamedIndividual(:Мокрота))
+Declaration(NamedIndividual(:Морбилливирус))
+Declaration(NamedIndividual(:Моторная))
+Declaration(NamedIndividual(:Мочевой_пузырь))
+Declaration(NamedIndividual(:Мочеточники))
+Declaration(NamedIndividual(:Мультфокальный_остеомиелит))
+Declaration(NamedIndividual(:Мышечная_система))
+Declaration(NamedIndividual(:Накопительная))
+Declaration(NamedIndividual(:Наружное_ухо))
+Declaration(NamedIndividual(:Нарушение_глотания))
+Declaration(NamedIndividual(:Насморк))
+Declaration(NamedIndividual(:Нервы))
+Declaration(NamedIndividual(:Одышка))
+Declaration(NamedIndividual(:Озноб))
+Declaration(NamedIndividual(:Околоушные_слюнные_железы))
+Declaration(NamedIndividual(:Опорная))
+Declaration(NamedIndividual(:Ортопоксвирус))
+Declaration(NamedIndividual(:Осморегулирующая))
+Declaration(NamedIndividual(:Оспа))
+Declaration(NamedIndividual(:Осповирус))
+Declaration(NamedIndividual(:Отек_головного_мозга))
+Declaration(NamedIndividual(:Отеки))
+Declaration(NamedIndividual(:Отрыжка))
+Declaration(NamedIndividual(:Парамиксовирус))
+Declaration(NamedIndividual(:Перепонка))
+Declaration(NamedIndividual(:Петрозит))
+Declaration(NamedIndividual(:Печеночная_недостаточность))
+Declaration(NamedIndividual(:Печень))
+Declaration(NamedIndividual(:Пикорнавирусы))
+Declaration(NamedIndividual(:Пищевод))
+Declaration(NamedIndividual(:Повышение_температуры_тела))
+Declaration(NamedIndividual(:Подвздошная_кишка))
+Declaration(NamedIndividual(:Поджелудочная_железа))
+Declaration(NamedIndividual(:Подкожная_ткань))
+Declaration(NamedIndividual(:Подчелюстные_слюнные_железы))
+Declaration(NamedIndividual(:Подъязычные_слюнные_железы))
+Declaration(NamedIndividual(:Покраснение))
+Declaration(NamedIndividual(:Покраснение_кожи))
+Declaration(NamedIndividual(:Полость_носа))
+Declaration(NamedIndividual(:Полукружные_каналы))
+Declaration(NamedIndividual(:Помутнение_роговицы))
+Declaration(NamedIndividual(:Поражение_зрительного_нерва))
+Declaration(NamedIndividual(:Почки))
+Declaration(NamedIndividual(:Преддверие_уха))
+Declaration(NamedIndividual(:Продолговатый_мозг))
+Declaration(NamedIndividual(:Промежуточный_мозг))
+Declaration(NamedIndividual(:РНК-вирус_гепатит_D))
+Declaration(NamedIndividual(:РНК-вирус_гепатит_А))
+Declaration(NamedIndividual(:РНК-вирус_гепатит_С))
+Declaration(NamedIndividual(:РНК-вирус_гепатита_Е))
+Declaration(NamedIndividual(:РНК-вирус_кори))
+Declaration(NamedIndividual(:Радужные_оболочки))
+Declaration(NamedIndividual(:Рвота))
+Declaration(NamedIndividual(:Рефлекторная))
+Declaration(NamedIndividual(:Роговицы))
+Declaration(NamedIndividual(:Рот))
+Declaration(NamedIndividual(:Связки))
+Declaration(NamedIndividual(:Секреторная))
+Declaration(NamedIndividual(:Селезёнка))
+Declaration(NamedIndividual(:Сердечные_мышцы))
+Declaration(NamedIndividual(:Сердце))
+Declaration(NamedIndividual(:Сетчатка))
+Declaration(NamedIndividual(:Скелет))
+Declaration(NamedIndividual(:Скелетные_мышцы))
+Declaration(NamedIndividual(:Слабость))
+Declaration(NamedIndividual(:Слезотечение))
+Declaration(NamedIndividual(:Слепота))
+Declaration(NamedIndividual(:Слюнные_железы))
+Declaration(NamedIndividual(:Снижение_зрения))
+Declaration(NamedIndividual(:Спинной_мозг))
+Declaration(NamedIndividual(:Спинномозговые_нервы))
+Declaration(NamedIndividual(:Среднее_ухо))
+Declaration(NamedIndividual(:Средний_мозг))
+Declaration(NamedIndividual(:Стафилококк))
+Declaration(NamedIndividual(:Стрептококк))
+Declaration(NamedIndividual(:Стрептококковая_пневмония))
+Declaration(NamedIndividual(:Стрептококковый_менингит))
+Declaration(NamedIndividual(:Судороги))
+Declaration(NamedIndividual(:Суставы))
+Declaration(NamedIndividual(:Сыпь))
+Declaration(NamedIndividual(:Терморегуляция))
+Declaration(NamedIndividual(:Тимус))
+Declaration(NamedIndividual(:Толстая_кишка))
+Declaration(NamedIndividual(:Тонкая_кишка))
+Declaration(NamedIndividual(:Тошнота))
+Declaration(NamedIndividual(:Тощая_кишка))
+Declaration(NamedIndividual(:Трахея))
+Declaration(NamedIndividual(:Тяжесть_в_желудке))
+Declaration(NamedIndividual(:Увеличение_печени))
+Declaration(NamedIndividual(:Увеличение_размеров_сердца))
+Declaration(NamedIndividual(:Увеличение_селезенки))
+Declaration(NamedIndividual(:Улитки))
+Declaration(NamedIndividual(:Утомляемость))
+Declaration(NamedIndividual(:Ухо))
+Declaration(NamedIndividual(:Ухудшение_памяти))
+Declaration(NamedIndividual(:Фильтрационная))
+Declaration(NamedIndividual(:Флавивирус))
+Declaration(NamedIndividual(:Формировочная))
+Declaration(NamedIndividual(:Хеликобактер_пилори))
+Declaration(NamedIndividual(:Хламидиозная_пневмония))
+Declaration(NamedIndividual(:Хламидия))
+Declaration(NamedIndividual(:Хрусталик))
+Declaration(NamedIndividual(:Цилиарное_тело))
+Declaration(NamedIndividual(:Черепные_нервы))
+Declaration(NamedIndividual(:Экзокринная))
+Declaration(NamedIndividual(:Экскреторная))
+Declaration(NamedIndividual(:Эндокринная))
+Declaration(NamedIndividual(:Энергетическая))
+Declaration(NamedIndividual(:Энтеральная_нервная_система))
+Declaration(NamedIndividual(:Язва_желудка))
+Declaration(NamedIndividual(:Язык))
+############################
+#   Object Properties
+############################
+
+# Object Property: :возбудитель (:возбудитель)
+
+ObjectPropertyDomain(:возбудитель :Бактерии)
+ObjectPropertyDomain(:возбудитель :Вирусы)
+ObjectPropertyRange(:возбудитель :Болезнь)
+
+# Object Property: :иметь_форму (:иметь_форму)
+
+ObjectPropertyDomain(:иметь_форму :Бактерии)
+ObjectPropertyRange(:иметь_форму :Бациллы)
+ObjectPropertyRange(:иметь_форму :Вибриллы)
+ObjectPropertyRange(:иметь_форму :Кокки)
+ObjectPropertyRange(:иметь_форму :Спириллы)
+
+# Object Property: :иметь_функцию (:иметь_функцию)
+
+ObjectPropertyDomain(:иметь_функцию :Системы_органов)
+
+# Object Property: :поражает (:поражает)
+
+SubObjectPropertyOf(:поражает owl:topObjectProperty)
+
+# Object Property: :род (:род)
+
+SubObjectPropertyOf(:род owl:topObjectProperty)
+ObjectPropertyDomain(:род :Вирусы)
+ObjectPropertyRange(:род :Вирусы)
+
+# Object Property: :семейство (:семейство)
+
+ObjectPropertyDomain(:семейство :Вирусы)
+ObjectPropertyRange(:семейство :Вирусы)
+
+# Object Property: :сопровождаается_симптом (:сопровождаается_симптом)
+
+ObjectPropertyDomain(:сопровождаается_симптом :Болезнь)
+ObjectPropertyRange(:сопровождаается_симптом :Симптомы)
+
+
+############################
+#   Classes
+############################
+
+# Class: :Бактериальная_пневмония (:Бактериальная_пневмония)
+
+SubClassOf(:Бактериальная_пневмония :Бактериальные_инфекционные_заболевания)
+SubClassOf(:Бактериальная_пневмония :Пневмония)
+
+# Class: :Бактериальные_инфекционные_заболевания (:Бактериальные_инфекционные_заболевания)
+
+SubClassOf(:Бактериальные_инфекционные_заболевания :Инфекционные_заболевания)
+
+# Class: :Бактериальный_менингит (:Бактериальный_менингит)
+
+SubClassOf(:Бактериальный_менингит :Бактериальные_инфекционные_заболевания)
+SubClassOf(:Бактериальный_менингит :Менингит)
+
+# Class: :Бактерии (:Бактерии)
+
+SubClassOf(:Бактерии ObjectSomeValuesFrom(:иметь_форму :Бациллы))
+SubClassOf(:Бактерии ObjectSomeValuesFrom(:иметь_форму :Вибриллы))
+SubClassOf(:Бактерии ObjectSomeValuesFrom(:иметь_форму :Кокки))
+SubClassOf(:Бактерии ObjectSomeValuesFrom(:иметь_форму :Спириллы))
+
+# Class: :Бациллы (:Бациллы)
+
+SubClassOf(:Бациллы :Бактерии)
+
+# Class: :Вибриллы (:Вибриллы)
+
+SubClassOf(:Вибриллы :Бактерии)
+
+# Class: :Вирусные_инфекционные_заболевания (:Вирусные_инфекционные_заболевания)
+
+SubClassOf(:Вирусные_инфекционные_заболевания :Инфекционные_заболевания)
+
+# Class: :Возпалительные_заболевания_скелета (:Возпалительные_заболевания_скелета)
+
+SubClassOf(:Возпалительные_заболевания_скелета :Заболевания_скелета)
+
+# Class: :Гепатит (:Гепатит)
+
+SubClassOf(:Гепатит :Вирусные_инфекционные_заболевания)
+
+# Class: :Дыхательная_система (:Дыхательная_система)
+
+SubClassOf(:Дыхательная_система :Системы_органов)
+
+# Class: :Заболевания_ЦНС (:Заболевания_ЦНС)
+
+SubClassOf(:Заболевания_ЦНС :Заболевания_нервной_системы)
+
+# Class: :Заболевания_анатамического_образования (:Заболевания_анатамического_образования)
+
+SubClassOf(:Заболевания_анатамического_образования :Болезнь)
+
+# Class: :Заболевания_глаза (:Заболевания_глаза)
+
+SubClassOf(:Заболевания_глаза :Заболевания_органов_чувств)
+
+# Class: :Заболевания_дыхательной_системы (:Заболевания_дыхательной_системы)
+
+SubClassOf(:Заболевания_дыхательной_системы :Заболевания_анатамического_образования)
+
+# Class: :Заболевания_желудка (:Заболевания_желудка)
+
+SubClassOf(:Заболевания_желудка :Заболевания_пищеварительной_системы)
+
+# Class: :Заболевания_конъюктивы (:Заболевания_конъюктивы)
+
+SubClassOf(:Заболевания_конъюктивы :Заболевания_глаза)
+
+# Class: :Заболевания_мочевыделительной_системы (:Заболевания_мочевыделительной_системы)
+
+SubClassOf(:Заболевания_мочевыделительной_системы :Заболевания_анатамического_образования)
+
+# Class: :Заболевания_мочеточников (:Заболевания_мочеточников)
+
+SubClassOf(:Заболевания_мочеточников :Заболевания_мочевыделительной_системы)
+
+# Class: :Заболевания_нервной_системы (:Заболевания_нервной_системы)
+
+SubClassOf(:Заболевания_нервной_системы :Заболевания_анатамического_образования)
+
+# Class: :Заболевания_опорно-двигательной_системы (:Заболевания_опорно-двигательной_системы)
+
+SubClassOf(:Заболевания_опорно-двигательной_системы :Заболевания_анатамического_образования)
+
+# Class: :Заболевания_органов_чувств (:Заболевания_органов_чувств)
+
+SubClassOf(:Заболевания_органов_чувств :Заболевания_нервной_системы)
+
+# Class: :Заболевания_пищеварительной_системы (:Заболевания_пищеварительной_системы)
+
+SubClassOf(:Заболевания_пищеварительной_системы :Заболевания_анатамического_образования)
+
+# Class: :Заболевания_скелета (:Заболевания_скелета)
+
+SubClassOf(:Заболевания_скелета :Заболевания_опорно-двигательной_системы)
+
+# Class: :Зоболевания_легких (:Зоболевания_легких)
+
+SubClassOf(:Зоболевания_легких :Заболевания_дыхательной_системы)
+
+# Class: :Инфекционные_заболевания (:Инфекционные_заболевания)
+
+SubClassOf(:Инфекционные_заболевания :Болезнь)
+
+# Class: :Кокки (:Кокки)
+
+SubClassOf(:Кокки :Бактерии)
+
+# Class: :Конъюктивит (:Конъюктивит)
+
+SubClassOf(:Конъюктивит :Заболевания_конъюктивы)
+
+# Class: :Лимфатическая_система (:Лимфатическая_система)
+
+SubClassOf(:Лимфатическая_система :Система_кровообращения)
+
+# Class: :Менингит (:Менингит)
+
+SubClassOf(:Менингит :Заболевания_ЦНС)
+
+# Class: :Мочевыделительная_система (:Мочевыделительная_система)
+
+SubClassOf(:Мочевыделительная_система :Системы_органов)
+
+# Class: :Нервная_система (:Нервная_система)
+
+SubClassOf(:Нервная_система :Системы_органов)
+
+# Class: :Опорно-двигательная_система (:Опорно-двигательная_система)
+
+SubClassOf(:Опорно-двигательная_система :Системы_органов)
+
+# Class: :Органы_чувств (:Органы_чувств)
+
+SubClassOf(:Органы_чувств :Нервная_система)
+
+# Class: :Остеомиелит (:Остеомиелит)
+
+SubClassOf(:Остеомиелит :Бактериальные_инфекционные_заболевания)
+SubClassOf(:Остеомиелит :Возпалительные_заболевания_скелета)
+
+# Class: :ПНС (:ПНС)
+
+SubClassOf(:ПНС :Нервная_система)
+
+# Class: :Пищеварительная_система (:Пищеварительная_система)
+
+SubClassOf(:Пищеварительная_система :Системы_органов)
+
+# Class: :Пневмония (:Пневмония)
+
+SubClassOf(:Пневмония :Зоболевания_легких)
+
+# Class: :Покровная_система (:Покровная_система)
+
+SubClassOf(:Покровная_система :Системы_органов)
+
+# Class: :Сердечно-сосудистая_система (:Сердечно-сосудистая_система)
+
+SubClassOf(:Сердечно-сосудистая_система :Система_кровообращения)
+
+# Class: :Система_кровообращения (:Система_кровообращения)
+
+SubClassOf(:Система_кровообращения :Системы_органов)
+
+# Class: :Спириллы (:Спириллы)
+
+SubClassOf(:Спириллы :Бактерии)
+
+# Class: :ЦНС (:ЦНС)
+
+SubClassOf(:ЦНС :Нервная_система)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :Абсцесс_головного_мозга (:Абсцесс_головного_мозга)
+
+ClassAssertion(:Симптомы :Абсцесс_головного_мозга)
+
+# Individual: :Артерии (:Артерии)
+
+ClassAssertion(:Сердечно-сосудистая_система :Артерии)
+
+# Individual: :Бактериальный_гастрит (:Бактериальный_гастрит)
+
+ClassAssertion(:Бактериальные_инфекционные_заболевания :Бактериальный_гастрит)
+ClassAssertion(:Заболевания_желудка :Бактериальный_гастрит)
+ObjectPropertyAssertion(:осложнение :Бактериальный_гастрит :Язва_желудка)
+ObjectPropertyAssertion(:поражает :Бактериальный_гастрит :Желудок)
+ObjectPropertyAssertion(:сопровождаается_симптом :Бактериальный_гастрит :Боли_в_эпигастральной_области)
+ObjectPropertyAssertion(:сопровождаается_симптом :Бактериальный_гастрит :Боль_при_глотании)
+ObjectPropertyAssertion(:сопровождаается_симптом :Бактериальный_гастрит :Изжога)
+ObjectPropertyAssertion(:сопровождаается_симптом :Бактериальный_гастрит :Метеоризм)
+ObjectPropertyAssertion(:сопровождаается_симптом :Бактериальный_гастрит :Нарушение_глотания)
+ObjectPropertyAssertion(:сопровождаается_симптом :Бактериальный_гастрит :Отрыжка)
+ObjectPropertyAssertion(:сопровождаается_симптом :Бактериальный_гастрит :Тошнота)
+
+# Individual: :Бактериальный_конъюктивит (:Бактериальный_конъюктивит)
+
+ClassAssertion(:Бактериальные_инфекционные_заболевания :Бактериальный_конъюктивит)
+ClassAssertion(:Конъюктивит :Бактериальный_конъюктивит)
+ObjectPropertyAssertion(:осложнение :Бактериальный_конъюктивит :Помутнение_роговицы)
+ObjectPropertyAssertion(:осложнение :Бактериальный_конъюктивит :Снижение_зрения)
+ObjectPropertyAssertion(:поражает :Бактериальный_конъюктивит :Конъюктива)
+ObjectPropertyAssertion(:сопровождаается_симптом :Бактериальный_конъюктивит :Гноетечение)
+ObjectPropertyAssertion(:сопровождаается_симптом :Бактериальный_конъюктивит :Зуд)
+ObjectPropertyAssertion(:сопровождаается_симптом :Бактериальный_конъюктивит :Покраснение)
+ObjectPropertyAssertion(:сопровождаается_симптом :Бактериальный_конъюктивит :Слезотечение)
+
+# Individual: :Боли_в_груди (:Боли_в_груди)
+
+ClassAssertion(:Симптомы :Боли_в_груди)
+
+# Individual: :Боли_в_эпигастральной_области (:Боли_в_эпигастральной_области)
+
+ClassAssertion(:Симптомы :Боли_в_эпигастральной_области)
+
+# Individual: :Боль_в_костях (:Боль_в_костях)
+
+ClassAssertion(:Симптомы :Боль_в_костях)
+
+# Individual: :Боль_в_мышцах (:Боль_в_мышцах)
+
+ClassAssertion(:Симптомы :Боль_в_мышцах)
+
+# Individual: :Боль_в_печени (:Боль_в_печени)
+
+ClassAssertion(:Симптомы :Боль_в_печени)
+
+# Individual: :Боль_в_суставах (:Боль_в_суставах)
+
+ClassAssertion(:Симптомы :Боль_в_суставах)
+
+# Individual: :Боль_при_глотании (:Боль_при_глотании)
+
+ClassAssertion(:Симптомы :Боль_при_глотании)
+
+# Individual: :Бронхи (:Бронхи)
+
+ClassAssertion(:Дыхательная_система :Бронхи)
+
+# Individual: :Вены (:Вены)
+
+ClassAssertion(:Сердечно-сосудистая_система :Вены)
+
+# Individual: :Внутреннее_ухо (:Внутреннее_ухо)
+
+ObjectPropertyAssertion(:состоит_из :Внутреннее_ухо :Полукружные_каналы)
+ObjectPropertyAssertion(:состоит_из :Внутреннее_ухо :Преддверие_уха)
+ObjectPropertyAssertion(:состоит_из :Внутреннее_ухо :Улитки)
+
+# Individual: :Воспаление_кожи (:Воспаление_кожи)
+
+ClassAssertion(:Симптомы :Воспаление_кожи)
+
+# Individual: :Всасывательная (:Всасывательная)
+
+ClassAssertion(:Функции_органов :Всасывательная)
+
+# Individual: :Газообмен (:Газообмен)
+
+ClassAssertion(:Функции_органов :Газообмен)
+
+# Individual: :Гепаднавирус (:Гепаднавирус)
+
+ObjectPropertyAssertion(:семейство :Гепаднавирус :ДНК-вирус_гепатит_В)
+
+# Individual: :Гепатит_D (:Гепатит_D)
+
+ClassAssertion(:Гепатит :Гепатит_D)
+ObjectPropertyAssertion(:осложнение :Гепатит_D :Печеночная_недостаточность)
+ObjectPropertyAssertion(:поражает :Гепатит_D :Печень)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_D :Боли_в_эпигастральной_области)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_D :Боль_в_мышцах)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_D :Боль_в_печени)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_D :Боль_в_суставах)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_D :Желтушность_кожных_покровов)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_D :Желтушность_склер)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_D :Зуд)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_D :Изменение_цвета_кала)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_D :Изменение_цвета_мочи)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_D :Повышение_температуры_тела)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_D :Рвота)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_D :Тошнота)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_D :Увеличение_печени)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_D :Увеличение_селезенки)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_D :Утомляемость)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_D :Ухудшение_памяти)
+
+# Individual: :Гепатит_E (:Гепатит_E)
+
+ClassAssertion(:Гепатит :Гепатит_E)
+ObjectPropertyAssertion(:поражает :Гепатит_E :Печень)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_E :Боль_в_печени)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_E :Боль_в_суставах)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_E :Желтушность_кожных_покровов)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_E :Желтушность_склер)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_E :Зуд)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_E :Изменение_цвета_кала)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_E :Изменение_цвета_мочи)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_E :Повышение_температуры_тела)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_E :Рвота)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_E :Слабость)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_E :Тошнота)
+
+# Individual: :Гепатит_А (:Гепатит_А)
+
+ClassAssertion(:Гепатит :Гепатит_А)
+ObjectPropertyAssertion(:поражает :Гепатит_А :Печень)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_А :Боль_в_мышцах)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_А :Боль_в_суставах)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_А :Боль_при_глотании)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_А :Головная_боль)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_А :Желтушность_кожных_покровов)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_А :Желтушность_склер)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_А :Лихорадка)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_А :Насморк)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_А :Повышение_температуры_тела)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_А :Рвота)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_А :Слабость)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_А :Тошнота)
+
+# Individual: :Гепатит_В (:Гепатит_В)
+
+ClassAssertion(:Гепатит :Гепатит_В)
+ObjectPropertyAssertion(:осложнение :Гепатит_В :Печеночная_недостаточность)
+ObjectPropertyAssertion(:поражает :Гепатит_В :Печень)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_В :Боль_в_суставах)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_В :Головная_боль)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_В :Желтушность_кожных_покровов)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_В :Зуд)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_В :Изжога)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_В :Метеоризм)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_В :Повышение_температуры_тела)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_В :Рвота)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_В :Тошнота)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_В :Утомляемость)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_В :Ухудшение_памяти)
+
+# Individual: :Гепатит_С (:Гепатит_С)
+
+ClassAssertion(:Гепатит :Гепатит_С)
+ObjectPropertyAssertion(:поражает :Гепатит_С :Печень)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_С :Боль_в_суставах)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_С :Желтушность_кожных_покровов)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_С :Зуд)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_С :Изменение_цвета_кала)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_С :Изменение_цвета_мочи)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_С :Кровотечение)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_С :Отеки)
+ObjectPropertyAssertion(:сопровождаается_симптом :Гепатит_С :Утомляемость)
+
+# Individual: :Гепатовирус (:Гепатовирус)
+
+ObjectPropertyAssertion(:род :Гепатовирус :РНК-вирус_гепатит_А)
+
+# Individual: :Глаза (:Глаза)
+
+ClassAssertion(:Органы_чувств :Глаза)
+ObjectPropertyAssertion(:состоит_из :Глаза :Конъюктива)
+ObjectPropertyAssertion(:состоит_из :Глаза :Радужные_оболочки)
+ObjectPropertyAssertion(:состоит_из :Глаза :Роговицы)
+ObjectPropertyAssertion(:состоит_из :Глаза :Сетчатка)
+ObjectPropertyAssertion(:состоит_из :Глаза :Хрусталик)
+ObjectPropertyAssertion(:состоит_из :Глаза :Цилиарное_тело)
+
+# Individual: :Глотка (:Глотка)
+
+ClassAssertion(:Дыхательная_система :Глотка)
+ClassAssertion(:Пищеварительная_система :Глотка)
+
+# Individual: :Глухость_сердечных_тонов (:Глухость_сердечных_тонов)
+
+ClassAssertion(:Симптомы :Глухость_сердечных_тонов)
+
+# Individual: :Глухота (:Глухота)
+
+ClassAssertion(:Симптомы :Глухота)
+
+# Individual: :Гноетечение (:Гноетечение)
+
+ClassAssertion(:Симптомы :Гноетечение)
+
+# Individual: :Головная_боль (:Головная_боль)
+
+ClassAssertion(:Симптомы :Головная_боль)
+
+# Individual: :Головной_мозг (:Головной_мозг)
+
+ClassAssertion(:ЦНС :Головной_мозг)
+ObjectPropertyAssertion(:состоит_из :Головной_мозг :Конечный_мозг)
+ObjectPropertyAssertion(:состоит_из :Головной_мозг :Промежуточный_мозг)
+
+# Individual: :Гортань (:Гортань)
+
+ClassAssertion(:Дыхательная_система :Гортань)
+
+# Individual: :ДНК-вирус_гепатит_В (:ДНК-вирус_гепатит_В)
+
+ClassAssertion(:Вирусы :ДНК-вирус_гепатит_В)
+ObjectPropertyAssertion(:возбудитель :ДНК-вирус_гепатит_В :Гепатит_В)
+
+# Individual: :ДНК-вирус_оспы (:ДНК-вирус_оспы)
+
+ClassAssertion(:Вирусы :ДНК-вирус_оспы)
+ObjectPropertyAssertion(:возбудитель :ДНК-вирус_оспы :Оспа)
+
+# Individual: :Двигательная (:Двигательная)
+
+ClassAssertion(:Функции_органов :Двигательная)
+
+# Individual: :Желтушность_кожных_покровов (:Желтушность_кожных_покровов)
+
+ClassAssertion(:Симптомы :Желтушность_кожных_покровов)
+
+# Individual: :Желтушность_склер (:Желтушность_склер)
+
+ClassAssertion(:Симптомы :Желтушность_склер)
+
+# Individual: :Желудок (:Желудок)
+
+ClassAssertion(:Пищеварительная_система :Желудок)
+ObjectPropertyAssertion(:иметь_функцию :Желудок :Всасывательная)
+ObjectPropertyAssertion(:иметь_функцию :Желудок :Защитная)
+ObjectPropertyAssertion(:иметь_функцию :Желудок :Накопительная)
+ObjectPropertyAssertion(:иметь_функцию :Желудок :Секреторная)
+ObjectPropertyAssertion(:иметь_функцию :Желудок :Экскреторная)
+ObjectPropertyAssertion(:иметь_функцию :Желудок :Эндокринная)
+
+# Individual: :Защитная (:Защитная)
+
+ClassAssertion(:Функции_органов :Защитная)
+
+# Individual: :Зуд (:Зуд)
+
+ClassAssertion(:Симптомы :Зуд)
+
+# Individual: :Изжога (:Изжога)
+
+ClassAssertion(:Симптомы :Изжога)
+
+# Individual: :Изменение_цвета_кала (:Изменение_цвета_кала)
+
+ClassAssertion(:Симптомы :Изменение_цвета_кала)
+
+# Individual: :Изменение_цвета_мочи (:Изменение_цвета_мочи)
+
+ClassAssertion(:Симптомы :Изменение_цвета_мочи)
+
+# Individual: :Инфекция_мочевыводящих_путей (:Инфекция_мочевыводящих_путей)
+
+ClassAssertion(:Бактериальные_инфекционные_заболевания :Инфекция_мочевыводящих_путей)
+ClassAssertion(:Заболевания_мочеточников :Инфекция_мочевыводящих_путей)
+ObjectPropertyAssertion(:поражает :Инфекция_мочевыводящих_путей :Мочеточники)
+
+# Individual: :Ионорегулирующая (:Ионорегулирующая)
+
+ClassAssertion(:Функции_органов :Ионорегулирующая)
+
+# Individual: :Иррадиация (:Иррадиация)
+
+ClassAssertion(:Симптомы :Иррадиация)
+
+# Individual: :Капилляры (:Капилляры)
+
+ClassAssertion(:Сердечно-сосудистая_система :Капилляры)
+
+# Individual: :Кашель (:Кашель)
+
+ClassAssertion(:Симптомы :Кашель)
+
+# Individual: :Кожа (:Кожа)
+
+ClassAssertion(:Покровная_система :Кожа)
+
+# Individual: :Конечный_мозг (:Конечный_мозг)
+
+ObjectPropertyAssertion(:иметь_функцию :Конечный_мозг :Рефлекторная)
+
+# Individual: :Корь (:Корь)
+
+ClassAssertion(:Вирусные_инфекционные_заболевания :Корь)
+ObjectPropertyAssertion(:осложнение :Корь :Менингококковый_менингит)
+ObjectPropertyAssertion(:осложнение :Корь :Отек_головного_мозга)
+ObjectPropertyAssertion(:осложнение :Корь :Слепота)
+ObjectPropertyAssertion(:осложнение :Корь :Стрептококковая_пневмония)
+ObjectPropertyAssertion(:поражает :Корь :Глотка)
+ObjectPropertyAssertion(:поражает :Корь :Рот)
+ObjectPropertyAssertion(:сопровождаается_симптом :Корь :Кашель)
+ObjectPropertyAssertion(:сопровождаается_симптом :Корь :Насморк)
+ObjectPropertyAssertion(:сопровождаается_симптом :Корь :Повышение_температуры_тела)
+ObjectPropertyAssertion(:сопровождаается_симптом :Корь :Сыпь)
+
+# Individual: :Костный_мозг (:Костный_мозг)
+
+ClassAssertion(:Лимфатическая_система :Костный_мозг)
+
+# Individual: :Кроветворная (:Кроветворная)
+
+ClassAssertion(:Функции_органов :Кроветворная)
+
+# Individual: :Кровотечение (:Кровотечение)
+
+ClassAssertion(:Симптомы :Кровотечение)
+
+# Individual: :Легкие (:Легкие)
+
+ClassAssertion(:Дыхательная_система :Легкие)
+ObjectPropertyAssertion(:иметь_функцию :Легкие :Газообмен)
+ObjectPropertyAssertion(:иметь_функцию :Легкие :Терморегуляция)
+
+# Individual: :Лимфатические_сосуды (:Лимфатические_сосуды)
+
+ClassAssertion(:Лимфатическая_система :Лимфатические_сосуды)
+
+# Individual: :Лимфопоэз (:Лимфопоэз)
+
+ClassAssertion(:Функции_органов :Лимфопоэз)
+
+# Individual: :Лимфоузлы (:Лимфоузлы)
+
+ClassAssertion(:Лимфатическая_система :Лимфоузлы)
+
+# Individual: :Лихорадка (:Лихорадка)
+
+ClassAssertion(:Симптомы :Лихорадка)
+
+# Individual: :Менингококк (:Менингококк)
+
+ObjectPropertyAssertion(:возбудитель :Менингококк :Менингококковый_менингит)
+
+# Individual: :Менингококковый_менингит (:Менингококковый_менингит)
+
+ClassAssertion(:Бактериальный_менингит :Менингококковый_менингит)
+ObjectPropertyAssertion(:осложнение :Менингококковый_менингит :Отек_головного_мозга)
+ObjectPropertyAssertion(:поражает :Менингококковый_менингит :Головной_мозг)
+ObjectPropertyAssertion(:сопровождаается_симптом :Менингококковый_менингит :Глухость_сердечных_тонов)
+ObjectPropertyAssertion(:сопровождаается_симптом :Менингококковый_менингит :Головная_боль)
+ObjectPropertyAssertion(:сопровождаается_симптом :Менингококковый_менингит :Лихорадка)
+ObjectPropertyAssertion(:сопровождаается_симптом :Менингококковый_менингит :Озноб)
+ObjectPropertyAssertion(:сопровождаается_симптом :Менингококковый_менингит :Повышение_температуры_тела)
+ObjectPropertyAssertion(:сопровождаается_симптом :Менингококковый_менингит :Рвота)
+ObjectPropertyAssertion(:сопровождаается_симптом :Менингококковый_менингит :Судороги)
+ObjectPropertyAssertion(:сопровождаается_симптом :Менингококковый_менингит :Увеличение_размеров_сердца)
+
+# Individual: :Метаболистическая (:Метаболистическая)
+
+ClassAssertion(:Функции_органов :Метаболистическая)
+
+# Individual: :Метеоризм (:Метеоризм)
+
+ClassAssertion(:Симптомы :Метеоризм)
+
+# Individual: :Мозговой_ствол (:Мозговой_ствол)
+
+ClassAssertion(:ЦНС :Мозговой_ствол)
+ObjectPropertyAssertion(:состоит_из :Мозговой_ствол :Варолиев_мозг)
+ObjectPropertyAssertion(:состоит_из :Мозговой_ствол :Продолговатый_мозг)
+ObjectPropertyAssertion(:состоит_из :Мозговой_ствол :Средний_мозг)
+
+# Individual: :Мозжечок (:Мозжечок)
+
+ClassAssertion(:ЦНС :Мозжечок)
+
+# Individual: :Мокрота (:Мокрота)
+
+ClassAssertion(:Симптомы :Мокрота)
+
+# Individual: :Морбилливирус (:Морбилливирус)
+
+ObjectPropertyAssertion(:род :Морбилливирус :РНК-вирус_кори)
+
+# Individual: :Моторная (:Моторная)
+
+ClassAssertion(:Функции_органов :Моторная)
+
+# Individual: :Мочевой_пузырь (:Мочевой_пузырь)
+
+ClassAssertion(:Мочевыделительная_система :Мочевой_пузырь)
+
+# Individual: :Мочеточники (:Мочеточники)
+
+ClassAssertion(:Мочевыделительная_система :Мочеточники)
+
+# Individual: :Мультфокальный_остеомиелит (:Мультфокальный_остеомиелит)
+
+ClassAssertion(:Остеомиелит :Мультфокальный_остеомиелит)
+ObjectPropertyAssertion(:поражает :Мультфокальный_остеомиелит :Скелет)
+ObjectPropertyAssertion(:сопровождаается_симптом :Мультфокальный_остеомиелит :Боль_в_костях)
+ObjectPropertyAssertion(:сопровождаается_симптом :Мультфокальный_остеомиелит :Боль_в_суставах)
+ObjectPropertyAssertion(:сопровождаается_симптом :Мультфокальный_остеомиелит :Воспаление_кожи)
+ObjectPropertyAssertion(:сопровождаается_симптом :Мультфокальный_остеомиелит :Покраснение_кожи)
+
+# Individual: :Мышечная_система (:Мышечная_система)
+
+ClassAssertion(:Опорно-двигательная_система :Мышечная_система)
+ObjectPropertyAssertion(:иметь_функцию :Мышечная_система :Двигательная)
+ObjectPropertyAssertion(:иметь_функцию :Мышечная_система :Защитная)
+ObjectPropertyAssertion(:иметь_функцию :Мышечная_система :Формировочная)
+ObjectPropertyAssertion(:иметь_функцию :Мышечная_система :Энергетическая)
+ObjectPropertyAssertion(:состоит_из :Мышечная_система :Гладкие_мышцы)
+ObjectPropertyAssertion(:состоит_из :Мышечная_система :Сердечные_мышцы)
+ObjectPropertyAssertion(:состоит_из :Мышечная_система :Скелетные_мышцы)
+
+# Individual: :Накопительная (:Накопительная)
+
+ClassAssertion(:Функции_органов :Накопительная)
+
+# Individual: :Нарушение_глотания (:Нарушение_глотания)
+
+ClassAssertion(:Симптомы :Нарушение_глотания)
+
+# Individual: :Насморк (:Насморк)
+
+ClassAssertion(:Симптомы :Насморк)
+
+# Individual: :Нервы (:Нервы)
+
+ClassAssertion(:ПНС :Нервы)
+ObjectPropertyAssertion(:состоит_из :Нервы :Ганглии)
+ObjectPropertyAssertion(:состоит_из :Нервы :Спинномозговые_нервы)
+ObjectPropertyAssertion(:состоит_из :Нервы :Черепные_нервы)
+ObjectPropertyAssertion(:состоит_из :Нервы :Энтеральная_нервная_система)
+
+# Individual: :Одышка (:Одышка)
+
+ClassAssertion(:Симптомы :Одышка)
+
+# Individual: :Озноб (:Озноб)
+
+ClassAssertion(:Симптомы :Озноб)
+
+# Individual: :Опорная (:Опорная)
+
+ClassAssertion(:Функции_органов :Опорная)
+
+# Individual: :Ортопоксвирус (:Ортопоксвирус)
+
+ObjectPropertyAssertion(:род :Ортопоксвирус :ДНК-вирус_оспы)
+
+# Individual: :Осморегулирующая (:Осморегулирующая)
+
+ClassAssertion(:Функции_органов :Осморегулирующая)
+
+# Individual: :Оспа (:Оспа)
+
+ClassAssertion(:Вирусные_инфекционные_заболевания :Оспа)
+ObjectPropertyAssertion(:осложнение :Оспа :Глухота)
+ObjectPropertyAssertion(:осложнение :Оспа :Стрептококковая_пневмония)
+ObjectPropertyAssertion(:сопровождаается_симптом :Оспа :Боль_в_мышцах)
+ObjectPropertyAssertion(:сопровождаается_симптом :Оспа :Гноетечение)
+ObjectPropertyAssertion(:сопровождаается_симптом :Оспа :Головная_боль)
+ObjectPropertyAssertion(:сопровождаается_симптом :Оспа :Лихорадка)
+ObjectPropertyAssertion(:сопровождаается_симптом :Оспа :Озноб)
+ObjectPropertyAssertion(:сопровождаается_симптом :Оспа :Слабость)
+ObjectPropertyAssertion(:сопровождаается_симптом :Оспа :Сыпь)
+
+# Individual: :Осповирус (:Осповирус)
+
+ObjectPropertyAssertion(:семейство :Осповирус :ДНК-вирус_оспы)
+
+# Individual: :Отек_головного_мозга (:Отек_головного_мозга)
+
+ClassAssertion(:Симптомы :Отек_головного_мозга)
+
+# Individual: :Отеки (:Отеки)
+
+ClassAssertion(:Симптомы :Отеки)
+
+# Individual: :Отрыжка (:Отрыжка)
+
+ClassAssertion(:Симптомы :Отрыжка)
+
+# Individual: :Парамиксовирус (:Парамиксовирус)
+
+ObjectPropertyAssertion(:семейство :Парамиксовирус :РНК-вирус_кори)
+
+# Individual: :Петрозит (:Петрозит)
+
+ClassAssertion(:Остеомиелит :Петрозит)
+ObjectPropertyAssertion(:осложнение :Петрозит :Абсцесс_головного_мозга)
+ObjectPropertyAssertion(:осложнение :Петрозит :Глухота)
+ObjectPropertyAssertion(:осложнение :Петрозит :Поражение_зрительного_нерва)
+ObjectPropertyAssertion(:поражает :Петрозит :Височная_кость)
+ObjectPropertyAssertion(:сопровождаается_симптом :Петрозит :Гноетечение)
+ObjectPropertyAssertion(:сопровождаается_симптом :Петрозит :Головная_боль)
+ObjectPropertyAssertion(:сопровождаается_симптом :Петрозит :Иррадиация)
+
+# Individual: :Печеночная_недостаточность (:Печеночная_недостаточность)
+
+ClassAssertion(:Симптомы :Печеночная_недостаточность)
+
+# Individual: :Печень (:Печень)
+
+ClassAssertion(:Пищеварительная_система :Печень)
+ObjectPropertyAssertion(:состоит_из :Печень :Желчный_пузырь)
+
+# Individual: :Пикорнавирусы (:Пикорнавирусы)
+
+ObjectPropertyAssertion(:семейство :Пикорнавирусы :РНК-вирус_гепатит_А)
+
+# Individual: :Пищевод (:Пищевод)
+
+ClassAssertion(:Пищеварительная_система :Пищевод)
+ObjectPropertyAssertion(:иметь_функцию :Пищевод :Моторная)
+
+# Individual: :Повышение_температуры_тела (:Повышение_температуры_тела)
+
+ClassAssertion(:Симптомы :Повышение_температуры_тела)
+
+# Individual: :Поджелудочная_железа (:Поджелудочная_железа)
+
+ClassAssertion(:Пищеварительная_система :Поджелудочная_железа)
+
+# Individual: :Подкожная_ткань (:Подкожная_ткань)
+
+ClassAssertion(:Покровная_система :Подкожная_ткань)
+
+# Individual: :Покраснение (:Покраснение)
+
+ClassAssertion(:Симптомы :Покраснение)
+
+# Individual: :Покраснение_кожи (:Покраснение_кожи)
+
+ClassAssertion(:Симптомы :Покраснение_кожи)
+
+# Individual: :Полость_носа (:Полость_носа)
+
+ClassAssertion(:Дыхательная_система :Полость_носа)
+
+# Individual: :Помутнение_роговицы (:Помутнение_роговицы)
+
+ClassAssertion(:Симптомы :Помутнение_роговицы)
+
+# Individual: :Поражение_зрительного_нерва (:Поражение_зрительного_нерва)
+
+ClassAssertion(:Симптомы :Поражение_зрительного_нерва)
+
+# Individual: :Почки (:Почки)
+
+ClassAssertion(:Мочевыделительная_система :Почки)
+ObjectPropertyAssertion(:иметь_функцию :Почки :Ионорегулирующая)
+ObjectPropertyAssertion(:иметь_функцию :Почки :Кроветворная)
+ObjectPropertyAssertion(:иметь_функцию :Почки :Метаболистическая)
+ObjectPropertyAssertion(:иметь_функцию :Почки :Осморегулирующая)
+ObjectPropertyAssertion(:иметь_функцию :Почки :Экскреторная)
+ObjectPropertyAssertion(:иметь_функцию :Почки :Эндокринная)
+
+# Individual: :РНК-вирус_гепатит_D (:РНК-вирус_гепатит_D)
+
+ClassAssertion(:Вирусы :РНК-вирус_гепатит_D)
+ObjectPropertyAssertion(:возбудитель :РНК-вирус_гепатит_D :Гепатит_D)
+
+# Individual: :РНК-вирус_гепатит_А (:РНК-вирус_гепатит_А)
+
+ClassAssertion(:Вирусы :РНК-вирус_гепатит_А)
+ObjectPropertyAssertion(:возбудитель :РНК-вирус_гепатит_А :Гепатит_А)
+
+# Individual: :РНК-вирус_гепатит_С (:РНК-вирус_гепатит_С)
+
+ClassAssertion(:Вирусы :РНК-вирус_гепатит_С)
+ObjectPropertyAssertion(:возбудитель :РНК-вирус_гепатит_С :Гепатит_С)
+
+# Individual: :РНК-вирус_гепатита_Е (:РНК-вирус_гепатита_Е)
+
+ClassAssertion(:Вирусы :РНК-вирус_гепатита_Е)
+ObjectPropertyAssertion(:возбудитель :РНК-вирус_гепатита_Е :Гепатит_E)
+
+# Individual: :РНК-вирус_кори (:РНК-вирус_кори)
+
+ClassAssertion(:Вирусы :РНК-вирус_кори)
+ObjectPropertyAssertion(:возбудитель :РНК-вирус_кори :Корь)
+
+# Individual: :Рвота (:Рвота)
+
+ClassAssertion(:Симптомы :Рвота)
+
+# Individual: :Рефлекторная (:Рефлекторная)
+
+ClassAssertion(:Функции_органов :Рефлекторная)
+
+# Individual: :Рот (:Рот)
+
+ClassAssertion(:Пищеварительная_система :Рот)
+ObjectPropertyAssertion(:состоит_из :Рот :Зубы)
+ObjectPropertyAssertion(:состоит_из :Рот :Язык)
+
+# Individual: :Связки (:Связки)
+
+ClassAssertion(:Опорно-двигательная_система :Связки)
+
+# Individual: :Секреторная (:Секреторная)
+
+ClassAssertion(:Функции_органов :Секреторная)
+
+# Individual: :Селезёнка (:Селезёнка)
+
+ClassAssertion(:Лимфатическая_система :Селезёнка)
+ObjectPropertyAssertion(:иметь_функцию :Селезёнка :Лимфопоэз)
+
+# Individual: :Сердце (:Сердце)
+
+ClassAssertion(:Сердечно-сосудистая_система :Сердце)
+
+# Individual: :Скелет (:Скелет)
+
+ClassAssertion(:Опорно-двигательная_система :Скелет)
+ObjectPropertyAssertion(:иметь_функцию :Скелет :Двигательная)
+ObjectPropertyAssertion(:иметь_функцию :Скелет :Защитная)
+ObjectPropertyAssertion(:иметь_функцию :Скелет :Кроветворная)
+ObjectPropertyAssertion(:иметь_функцию :Скелет :Метаболистическая)
+ObjectPropertyAssertion(:иметь_функцию :Скелет :Опорная)
+ObjectPropertyAssertion(:состоит_из :Скелет :Височная_кость)
+
+# Individual: :Слабость (:Слабость)
+
+ClassAssertion(:Симптомы :Слабость)
+
+# Individual: :Слезотечение (:Слезотечение)
+
+ClassAssertion(:Симптомы :Слезотечение)
+
+# Individual: :Слепота (:Слепота)
+
+ClassAssertion(:Симптомы :Слепота)
+
+# Individual: :Слюнные_железы (:Слюнные_железы)
+
+ClassAssertion(:Пищеварительная_система :Слюнные_железы)
+ObjectPropertyAssertion(:иметь_функцию :Слюнные_железы :Фильтрационная)
+ObjectPropertyAssertion(:иметь_функцию :Слюнные_железы :Экзокринная)
+ObjectPropertyAssertion(:иметь_функцию :Слюнные_железы :Экскреторная)
+ObjectPropertyAssertion(:иметь_функцию :Слюнные_железы :Эндокринная)
+ObjectPropertyAssertion(:состоит_из :Слюнные_железы :Околоушные_слюнные_железы)
+ObjectPropertyAssertion(:состоит_из :Слюнные_железы :Подчелюстные_слюнные_железы)
+ObjectPropertyAssertion(:состоит_из :Слюнные_железы :Подъязычные_слюнные_железы)
+
+# Individual: :Снижение_зрения (:Снижение_зрения)
+
+ClassAssertion(:Симптомы :Снижение_зрения)
+
+# Individual: :Спинной_мозг (:Спинной_мозг)
+
+ClassAssertion(:ЦНС :Спинной_мозг)
+
+# Individual: :Среднее_ухо (:Среднее_ухо)
+
+ObjectPropertyAssertion(:состоит_из :Среднее_ухо :Косточки)
+
+# Individual: :Стафилококк (:Стафилококк)
+
+ClassAssertion(:Кокки :Стафилококк)
+ObjectPropertyAssertion(:возбудитель :Стафилококк :Бактериальный_конъюктивит)
+
+# Individual: :Стрептококк (:Стрептококк)
+
+ClassAssertion(:Кокки :Стрептококк)
+ObjectPropertyAssertion(:возбудитель :Стрептококк :Петрозит)
+ObjectPropertyAssertion(:возбудитель :Стрептококк :Стрептококковая_пневмония)
+ObjectPropertyAssertion(:возбудитель :Стрептококк :Стрептококковый_менингит)
+
+# Individual: :Стрептококковая_пневмония (:Стрептококковая_пневмония)
+
+ClassAssertion(:Бактериальная_пневмония :Стрептококковая_пневмония)
+ObjectPropertyAssertion(:поражает :Стрептококковая_пневмония :Легкие)
+ObjectPropertyAssertion(:сопровождаается_симптом :Стрептококковая_пневмония :Боли_в_груди)
+ObjectPropertyAssertion(:сопровождаается_симптом :Стрептококковая_пневмония :Кашель)
+ObjectPropertyAssertion(:сопровождаается_симптом :Стрептококковая_пневмония :Лихорадка)
+ObjectPropertyAssertion(:сопровождаается_симптом :Стрептококковая_пневмония :Мокрота)
+ObjectPropertyAssertion(:сопровождаается_симптом :Стрептококковая_пневмония :Одышка)
+ObjectPropertyAssertion(:сопровождаается_симптом :Стрептококковая_пневмония :Повышение_температуры_тела)
+
+# Individual: :Стрептококковый_менингит (:Стрептококковый_менингит)
+
+ClassAssertion(:Бактериальный_менингит :Стрептококковый_менингит)
+ObjectPropertyAssertion(:поражает :Стрептококковый_менингит :Головной_мозг)
+ObjectPropertyAssertion(:сопровождаается_симптом :Стрептококковый_менингит :Головная_боль)
+ObjectPropertyAssertion(:сопровождаается_симптом :Стрептококковый_менингит :Лихорадка)
+ObjectPropertyAssertion(:сопровождаается_симптом :Стрептококковый_менингит :Озноб)
+ObjectPropertyAssertion(:сопровождаается_симптом :Стрептококковый_менингит :Повышение_температуры_тела)
+ObjectPropertyAssertion(:сопровождаается_симптом :Стрептококковый_менингит :Рвота)
+
+# Individual: :Судороги (:Судороги)
+
+ClassAssertion(:Симптомы :Судороги)
+
+# Individual: :Суставы (:Суставы)
+
+ClassAssertion(:Опорно-двигательная_система :Суставы)
+
+# Individual: :Сыпь (:Сыпь)
+
+ClassAssertion(:Симптомы :Сыпь)
+
+# Individual: :Терморегуляция (:Терморегуляция)
+
+ClassAssertion(:Функции_органов :Терморегуляция)
+
+# Individual: :Тимус (:Тимус)
+
+ClassAssertion(:Лимфатическая_система :Тимус)
+
+# Individual: :Толстая_кишка (:Толстая_кишка)
+
+ClassAssertion(:Пищеварительная_система :Толстая_кишка)
+
+# Individual: :Тонкая_кишка (:Тонкая_кишка)
+
+ClassAssertion(:Пищеварительная_система :Тонкая_кишка)
+ObjectPropertyAssertion(:состоит_из :Тонкая_кишка :Двенадцатиперстная_кишка)
+ObjectPropertyAssertion(:состоит_из :Тонкая_кишка :Подвздошная_кишка)
+ObjectPropertyAssertion(:состоит_из :Тонкая_кишка :Тощая_кишка)
+
+# Individual: :Тошнота (:Тошнота)
+
+ClassAssertion(:Симптомы :Тошнота)
+
+# Individual: :Трахея (:Трахея)
+
+ClassAssertion(:Дыхательная_система :Трахея)
+
+# Individual: :Тяжесть_в_желудке (:Тяжесть_в_желудке)
+
+ClassAssertion(:Симптомы :Тяжесть_в_желудке)
+
+# Individual: :Увеличение_печени (:Увеличение_печени)
+
+ClassAssertion(:Симптомы :Увеличение_печени)
+
+# Individual: :Увеличение_размеров_сердца (:Увеличение_размеров_сердца)
+
+ClassAssertion(:Симптомы :Увеличение_размеров_сердца)
+
+# Individual: :Увеличение_селезенки (:Увеличение_селезенки)
+
+ClassAssertion(:Симптомы :Увеличение_селезенки)
+
+# Individual: :Утомляемость (:Утомляемость)
+
+ClassAssertion(:Симптомы :Утомляемость)
+
+# Individual: :Ухо (:Ухо)
+
+ClassAssertion(:Органы_чувств :Ухо)
+ObjectPropertyAssertion(:состоит_из :Ухо :Внутреннее_ухо)
+ObjectPropertyAssertion(:состоит_из :Ухо :Наружное_ухо)
+ObjectPropertyAssertion(:состоит_из :Ухо :Перепонка)
+ObjectPropertyAssertion(:состоит_из :Ухо :Среднее_ухо)
+
+# Individual: :Ухудшение_памяти (:Ухудшение_памяти)
+
+ClassAssertion(:Симптомы :Ухудшение_памяти)
+
+# Individual: :Фильтрационная (:Фильтрационная)
+
+ClassAssertion(:Функции_органов :Фильтрационная)
+
+# Individual: :Флавивирус (:Флавивирус)
+
+ObjectPropertyAssertion(:семейство :Флавивирус :РНК-вирус_гепатит_С)
+
+# Individual: :Формировочная (:Формировочная)
+
+ClassAssertion(:Функции_органов :Формировочная)
+
+# Individual: :Хеликобактер_пилори (:Хеликобактер_пилори)
+
+ClassAssertion(:Спириллы :Хеликобактер_пилори)
+ObjectPropertyAssertion(:возбудитель :Хеликобактер_пилори :Бактериальный_гастрит)
+
+# Individual: :Хламидиозная_пневмония (:Хламидиозная_пневмония)
+
+ClassAssertion(:Бактериальная_пневмония :Хламидиозная_пневмония)
+ObjectPropertyAssertion(:поражает :Хламидиозная_пневмония :Легкие)
+ObjectPropertyAssertion(:сопровождаается_симптом :Хламидиозная_пневмония :Боли_в_груди)
+ObjectPropertyAssertion(:сопровождаается_симптом :Хламидиозная_пневмония :Головная_боль)
+ObjectPropertyAssertion(:сопровождаается_симптом :Хламидиозная_пневмония :Кашель)
+ObjectPropertyAssertion(:сопровождаается_симптом :Хламидиозная_пневмония :Лихорадка)
+ObjectPropertyAssertion(:сопровождаается_симптом :Хламидиозная_пневмония :Повышение_температуры_тела)
+ObjectPropertyAssertion(:сопровождаается_симптом :Хламидиозная_пневмония :Слабость)
+
+# Individual: :Хламидия (:Хламидия)
+
+ClassAssertion(:Кокки :Хламидия)
+ObjectPropertyAssertion(:возбудитель :Хламидия :Хламидиозная_пневмония)
+
+# Individual: :Экзокринная (:Экзокринная)
+
+ClassAssertion(:Функции_органов :Экзокринная)
+
+# Individual: :Экскреторная (:Экскреторная)
+
+ClassAssertion(:Функции_органов :Экскреторная)
+
+# Individual: :Эндокринная (:Эндокринная)
+
+ClassAssertion(:Функции_органов :Эндокринная)
+
+# Individual: :Энергетическая (:Энергетическая)
+
+ClassAssertion(:Функции_органов :Энергетическая)
+
+# Individual: :Язва_желудка (:Язва_желудка)
+
+ClassAssertion(:Заболевания_желудка :Язва_желудка)
+ObjectPropertyAssertion(:сопровождаается_симптом :Язва_желудка :Боли_в_эпигастральной_области)
+ObjectPropertyAssertion(:сопровождаается_симптом :Язва_желудка :Тошнота)
+ObjectPropertyAssertion(:сопровождаается_симптом :Язва_желудка :Тяжесть_в_желудке)
+
+# Individual: :Язык (:Язык)
+
+ClassAssertion(:Органы_чувств :Язык)
+
+
+)

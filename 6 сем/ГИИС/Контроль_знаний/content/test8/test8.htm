@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+    <META HTTP-EQUIV="Content-Language" CONTENT="ru">
+    <title>Тест №8</title>
+</head>
+
+<body>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript" src="../check.js"></script>
+<script type="text/javascript">
+    var answers = [0, 2, 1, 2, 0, 1, 0, 0, 1, 0];
+</script>
+
+<form id="form1" name="form1" method="post" action="">
+    <div id="answers">
+    </div>
+    <div align="center">
+        <strong>Тест №8 </strong></div>
+
+    <!--1 вопрос -->
+    <p>1. Что такое отсечение? <br>
+        <label>
+            <input id="10" type="radio" name="RadioGroup1" value="radio"/>
+           выделение части БД</label>
+        <br/>
+        <label>
+            <input id="11" type="radio" name="RadioGroup1" value="radio"/>
+            выделение части БЗ</label>
+  <br/>
+        <label>
+            <input id="12" type="radio" name="RadioGroup1" value="radio"/>
+            удаление части БЗ</label>
+    </p>
+
+    <!--2 вопрос -->
+    <p>2. Перечислите случаи применения отсечения.<br>
+        <label>
+            <input id="20" type="radio" name="RadioGroup2" value="radio"/>
+            при удалении невидимых линий и поверхностей, при формировании фактур.</label>
+        <br/>
+        <label>
+            <input id="21" type="radio" name="RadioGroup2" value="radio"/>
+           при удалении невидимых линий и поверхностей,при построении теней.</label><br/>
+        
+        <label>
+            <input id="23" type="radio" name="RadioGroup2" value="radio"/>
+            при удалении невидимых линий и поверхностей, при формировании фактур, при построении теней.</label>
+    </p>
+
+    <!--3 вопрос -->
+    <p>3. К каким областям применяются алгоритмы отсечения?  <br>
+        <label>
+            <input id="30" type="radio" name="RadioGroup3" value="radio"/>
+           регулярным областям.</label>
+        <br/>
+        <label>
+            <input id="31" type="radio" name="RadioGroup3" value="radio"/>
+            регулярным областям, нерегулярным областям и объемам.</label><br/>
+        <label>
+            <input id="32" type="radio" name="RadioGroup3" value="radio"/>
+            регулярным областям, нерегулярным областям и объемам, частично регулярным областям.</label>
+    </p>
+
+    <!--4 вопрос -->
+    <p>4. Какой может быть реализация алгоритмов отсечения?<br/>
+        <label>
+            <input id="40" type="radio" name="RadioGroup4" value="radio"/>
+           аппаратной</label>
+        <br/>
+        <label>
+            <input id="41" type="radio" name="RadioGroup4" value="radio"/>
+            программной</label>
+        <br/>
+        <label>
+            <input id="42" type="radio" name="RadioGroup4" value="radio"/>
+            программной, аппаратной
+
+        </label>
+    </p>
+
+    <!--5 вопрос -->
+    <p>5. Перечислите типы алгоритмов отсечения.<br/>
+        <label>
+            <input id="50" type="radio" name="RadioGroup5" value="radio"/>
+            двухмерные, трехмерные</label>
+        <br/>
+        <label>
+            <input id="51" type="radio" name="RadioGroup5" value="radio"/>
+            двухмерные, трехмерные, четырехмерные</label>
+        <br/>
+        <label>
+            <input id="52" type="radio" name="RadioGroup5" value="radio"/>
+           n-мерные
+        </label>
+    </p>
+
+    <!--6 вопрос -->
+    <p>6. Какова сущность метода Коэна-Сазерленда?<br/>
+        <label>
+            <input id="60" type="radio" name="RadioGroup6" value="radio"/>
+            осуществляет тесты полной видимости отрезков</label>
+        <br/>
+        <label>
+            <input id="61" type="radio" name="RadioGroup6" value="radio"/>
+            осуществляет тесты полной видимости или невидимости отрезков</label>
+        <br/>
+        <label>
+            <input id="62" type="radio" name="RadioGroup6" value="radio"/>
+           осуществляет тесты неполной видимости или невидимости отрезков
+        </label>
+    </p>
+
+    <!--7 вопрос -->
+    <p>7. Назовите причину применения алгоритма Коэна-Сазерленда? <br/>
+        <label>
+            <input id="70" type="radio" name="RadioGroup7" value="radio"/>
+             отсекающее окно является координатно-ориентированным прямоугольником.</label>
+        <br/>
+        <label>
+            <input id="71" type="radio" name="RadioGroup7" value="radio"/>
+            прямоугольное окно повернуто относительно системы координат на некоторый угол.</label>
+        <br/>
+        <label>
+            <input id="72" type="radio" name="RadioGroup7" value="radio"/>
+            отсекающее окно не является координатно-ориентированным прямоугольником.
+        </label>
+        
+    </p>
+
+    <!--8 вопрос -->
+    <p>8. Назовите причину применения алгоритма разбиения средней точкой? <br/>
+        <label>
+            <input id="80" type="radio" name="RadioGroup8" value="radio"/>
+            отсекающее окно является координатно-ориентированным прямоугольником.</label>
+        <br/>
+        <label>
+            <input id="81" type="radio" name="RadioGroup8" value="radio"/>
+           прямоугольное окно повернуто относительно системы координат на некоторый угол.</label>
+        <br/>
+        <label>
+            <input id="82" type="radio" name="RadioGroup8" value="radio"/>
+            отсекающее окно не является координатно-ориентированным прямоугольником.
+        </label>
+    </p>
+
+    <!--9 вопрос -->
+    <p>9. Назовите причину применения алгоритма отсечения Кируса-Бэка? <br/>
+        <label>
+            <input id="90" type="radio" name="RadioGroup9" value="radio"/>
+           отсекающее окно является координатно-ориентированным прямоугольником.</label>
+        <br/>
+        <label>
+            <input id="91" type="radio" name="RadioGroup9" value="radio"/>
+           прямоугольное окно повернуто относительно системы координат на некоторый угол. </label>
+        <br/>
+        <label>
+            <input id="92" type="radio" name="RadioGroup9" value="radio"/>
+          отсекающее окно не является координатно-ориентированным прямоугольником.
+        </label>
+    </p>
+
+    <!--10 вопрос -->
+    <p>10.  С какими телами работает алгоритм Робертса?<br/>
+        <label>
+            <input id="100" type="radio" name="RadioGroup9" value="radio"/>
+           выпуклыми</label>
+        <br/>
+        <label>
+            <input id="101" type="radio" name="RadioGroup9" value="radio"/>
+          вогнутыми</label>
+        <br/>
+        <label>
+            <input id="102" type="radio" name="RadioGroup9" value="radio"/>
+          выпуклыми, вогнутыми
+        </label>
+    </p>
+
+    <input type="button" name="Submit" value="проверка" onclick="check(10)"/>
+
+
+</form>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+    <META HTTP-EQUIV="Content-Language" CONTENT="ru">
+    <title>Тест №7</title>
+</head>
+
+<body>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript" src="../check.js"></script>
+<script type="text/javascript">
+    var answers = [1, 2, 4, 0, 0, 1, 0, 0, 1];
+</script>
+
+<form id="form1" name="form1" method="post" action="">
+    <div id="answers">
+    </div>
+    <div align="center">
+        <strong>Тест №7</strong></div>
+
+    <!--1 вопрос -->
+    <p>1. Что такое геометрическое преобразование?<br>
+        <label>
+            <input id="10" type="radio" name="RadioGroup1" value="radio"/>
+            Это произвольное отображение прямой, плоскости или пространства на себя</label>
+        <br/>
+        <label>
+            <input id="11" type="radio" name="RadioGroup1" value="radio"/>
+            Это взаимно однозначное отображение прямой, плоскости или пространства на себя</label>
+        <br/>
+        <label>
+            <input id="12" type="radio" name="RadioGroup1" value="radio"/>
+            Это перенос графических объектов из одного пространства в другое</label>
+    </p>
+
+    <!--2 вопрос -->
+    <p>2. Какое свойство афинных преобразований?<br>
+        <label>
+            <input id="20" type="radio" name="RadioGroup2" value="radio"/>
+            Сохраняются расстояния</label>
+        <br/>
+        <label>
+            <input id="21" type="radio" name="RadioGroup2" value="radio"/>
+            Сохраняются углы</label>
+        <br/>
+        <label>
+            <input id="22" type="radio" name="RadioGroup2" value="radio"/>
+            Сохраняется параллельность линий</label><br/>
+        <label>
+            <input id="23" type="radio" name="RadioGroup2" value="radio"/>
+            Прямые переходят в прямые</label>
+    </p>
+
+    <!--3 вопрос -->
+    <p>3. Какие афинные преобразования определены для двухмерных преобразований?<br>
+        <label>
+            <input id="30" type="radio" name="RadioGroup3" value="radio"/>
+            сдвиг / масштабирование / поворот</label>
+        <br/>
+        <label>
+            <input id="31" type="radio" name="RadioGroup3" value="radio"/>
+            масштабирование / отражение / поворот</label><br/>
+        <label>
+            <input id="32" type="radio" name="RadioGroup3" value="radio"/>
+            сдвиг / масштабирование / отражение</label>
+        <br/>
+        <label>
+            <input id="33" type="radio" name="RadioGroup3" value="radio"/>
+            сдвиг / отражение / поворот</label>
+        <br/>
+        <label>
+            <input id="34" type="radio" name="RadioGroup3" value="radio"/>
+            сдвиг / масштабирование / отражение / поворот</label>
+    </p>
+
+    <!--4 вопрос -->
+    <p>4. Однородными координатами точки (х; у) являются:<br/>
+        <label>
+            <input id="40" type="radio" name="RadioGroup4" value="radio"/>
+            Любая тройка чисел х1, х2, х3, при условии: х1/х3 = х; х2/х3 = у</label>
+        <br/>
+        <label>
+            <input id="41" type="radio" name="RadioGroup4" value="radio"/>
+            Любая тройка чисел х1, х2, х3, при условии: х3/х2 = х; х3/х1 = у</label>
+        <br/>
+        <label>
+            <input id="42" type="radio" name="RadioGroup4" value="radio"/>
+            Любая тройка чисел х1, х2, х3, при условии: х3/х1 = х; х3/х2 = у
+        </label>
+    </p>
+
+    <!--5 вопрос -->
+    <p>5. Как получить матрицу сложного преобразования?<br/>
+        <label>
+            <input id="50" type="radio" name="RadioGroup5" value="radio"/>
+            Вычислить произведение отдельных преобразований</label>
+        <br/>
+        <label>
+            <input id="51" type="radio" name="RadioGroup5" value="radio"/>
+            Берется из справочной таблицы</label>
+        <br/>
+        <label>
+            <input id="52" type="radio" name="RadioGroup5" value="radio"/>
+            Вычислить сумму отдельных преобразований
+        </label>
+    </p>
+
+    <!--6 вопрос -->
+    <p>6. Что определяет трехмерный вектор перемещения?<br/>
+        <label>
+            <input id="60" type="radio" name="RadioGroup6" value="radio"/>
+            Величины, на которые нужно умножить каждую из трех координат объекта</label>
+        <br/>
+        <label>
+            <input id="61" type="radio" name="RadioGroup6" value="radio"/>
+            Насколько нужно переместить объект по каждой из трех координат</label>
+        <br/>
+        <label>
+            <input id="62" type="radio" name="RadioGroup6" value="radio"/>
+            Новые трехмерные координа центра объекта
+        </label>
+    </p>
+
+    <!--7 вопрос -->
+    <p>7. С помощью чего строится проекция трехмерного объекта?<br/>
+        <label>
+            <input id="70" type="radio" name="RadioGroup7" value="radio"/>
+            При помощи прямых проецирующих лучей</label>
+        <br/>
+        <label>
+            <input id="71" type="radio" name="RadioGroup7" value="radio"/>
+            При помощи совмещенных вертикальных следов</label>
+        <br/>
+        <label>
+            <input id="72" type="radio" name="RadioGroup7" value="radio"/>
+            При помощи перемножение трехмерных координат на заданный вектор
+        </label>
+    </p>
+
+    <!--8 вопрос -->
+    <p>8. Что получится если спроецировать отрезок на плоскость?<br/>
+        <label>
+            <input id="80" type="radio" name="RadioGroup8" value="radio"/>
+            Отрезок</label>
+        <br/>
+        <label>
+            <input id="81" type="radio" name="RadioGroup8" value="radio"/>
+            Кривая</label>
+        <br/>
+        <label>
+            <input id="82" type="radio" name="RadioGroup8" value="radio"/>
+            Прямая
+        </label>
+    </p>
+
+    <!--9 вопрос -->
+    <p>9. Что является особенностью перспективной проекции?<br/>
+        <label>
+            <input id="90" type="radio" name="RadioGroup9" value="radio"/>
+            Параллельные прямые не сходятся</label>
+        <br/>
+        <label>
+            <input id="91" type="radio" name="RadioGroup9" value="radio"/>
+            Параллельные прямые могут сходиться в бесконечно удаленной точке</label>
+        <br/>
+    </p>
+
+
+    <input type="button" name="Submit" value="проверка" onclick="check(9)"/>
+
+
+</form>
+</body>
+</html>

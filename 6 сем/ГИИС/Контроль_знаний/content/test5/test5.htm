@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+    <META HTTP-EQUIV="Content-Language" CONTENT="ru">
+    <title>Тест №5</title>
+</head>
+
+<body>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript" src="../check.js"></script>
+<script type="text/javascript">
+    var answers = [0, 1, 0, 2, 0, 2, 1];
+</script>
+
+<form id="form1" name="form1" method="post" action="">
+    <div id="answers">
+    </div>
+    <div align="center">
+        <strong>Тест №5</strong></div>
+
+    <!--1 вопрос -->
+    <p>1. Что представляет задача восполнения данных?<br>
+        <label>
+            <input id="10" type="radio" name="RadioGroup1" value="radio"/>
+            дано множество точек, через которые следует провести кривую или поверхность</label>
+        <br/>
+        <label>
+            <input id="11" type="radio" name="RadioGroup1" value="radio"/>
+            выделение множества точек из кривой или поверхности</label>
+        <br/>
+        <label>
+            <input id="12" type="radio" name="RadioGroup1" value="radio"/>
+            нахождение недостающих точек в кривой или поверхности</label>
+    </p>
+
+    <!--2 вопрос -->
+    <p>2. У какого объекта самое простое параметрическое уравнение?<br>
+        <label>
+            <input id="20" type="radio" name="RadioGroup2" value="radio"/>
+            окружность</label>
+        <br/>
+        <label>
+            <input id="21" type="radio" name="RadioGroup2" value="radio"/>
+            прямая</label>
+        <br/>
+        <label>
+            <input id="22" type="radio" name="RadioGroup2" value="radio"/>
+            отрезок</label>
+    </p>
+
+    <!--3 вопрос -->
+    <p>3. Что интерполирует многочлен в методе Эрмита помимо самой функции f?<br>
+        <label>
+            <input id="30" type="radio" name="RadioGroup3" value="radio"/>
+            заданное число последовательных производных функции f
+        </label>
+        <br/>
+        <label>
+            <input id="31" type="radio" name="RadioGroup3" value="radio"/>
+            первую производную функции f</label>
+        <br/>
+        <label>
+            <input id="32" type="radio" name="RadioGroup3" value="radio"/>
+            первые две производные функции f</label>
+    </p>
+
+    <!--4 вопрос -->
+    <p>4. В методе Эрмита на что разбивается кривая?<br/>
+        <label>
+            <input id="40" type="radio" name="RadioGroup4" value="radio"/>
+            на точки</label>
+        <br/>
+        <label>
+            <input id="41" type="radio" name="RadioGroup4" value="radio"/>
+            на отрезки</label>
+        <br/>
+        <label>
+            <input id="42" type="radio" name="RadioGroup4" value="radio"/>
+            на сегменты</label>
+    </p>
+
+    <!--5 вопрос -->
+    <p>5. В методе Эрмита что в большей степени влияет на форму сплайна?<br/>
+        <label>
+            <input id="50" type="radio" name="RadioGroup5" value="radio"/>
+            положение концевых точек</label>
+        <br/>
+        <label>
+            <input id="51" type="radio" name="RadioGroup5" value="radio"/>
+            длина сплайна</label>
+        <br/>
+        <label>
+            <input id="52" type="radio" name="RadioGroup5" value="radio"/>
+            расстояние между концевыми точками</label>
+    </p>
+
+    <!--6 вопрос -->
+    <p>6. Что выступает в качестве граничных условий в формах Безье?<br/>
+        <label>
+            <input id="60" type="radio" name="RadioGroup6" value="radio"/>
+            2 точки</label>
+        <br/>
+        <label>
+            <input id="61" type="radio" name="RadioGroup6" value="radio"/>
+            3 точки</label>
+        <br/>
+        <label>
+            <input id="62" type="radio" name="RadioGroup6" value="radio"/>
+            4 точки</label>
+    </p>
+
+    <!--7 вопрос -->
+    <p>7. В чем преимущество метода B-сплайнов перед другими?<br/>
+        <label>
+            <input id="70" type="radio" name="RadioGroup7" value="radio"/>
+            получение более изогнутых кривых</label>
+        <br/>
+        <label>
+            <input id="71" type="radio" name="RadioGroup7" value="radio"/>
+            получение более гладких кривых</label>
+        <br/>
+        <label>
+            <input id="72" type="radio" name="RadioGroup7" value="radio"/>
+            получение более точных кривых
+        </label>
+    </p>
+
+
+    <input type="button" name="Submit" value="проверка" onclick="check(7)"/>
+
+
+</form>
+</body>
+</html>

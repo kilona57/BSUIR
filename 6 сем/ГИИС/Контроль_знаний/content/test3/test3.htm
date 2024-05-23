@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+    <META HTTP-EQUIV="Content-Language" CONTENT="ru">
+    <title>Тест №3</title>
+</head>
+
+<body>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript" src="../check.js"></script>
+<script type="text/javascript">
+    var answers = [0, 1, 2, 1, 1, 0, 0];
+</script>
+
+<form id="form1" name="form1" method="post" action="">
+    <div id="answers">
+    </div>
+    <div align="center">
+        <strong>Тест №3</strong></div>
+
+    <!--1 вопрос -->
+    <p>1. Что должно быть задано в алгоритмах построения отрезков?<br>
+        <label>
+            <input id="10" type="radio" name="RadioGroup1" value="radio"/>
+            координаты начала и конца</label>
+        <br/>
+        <label>
+            <input id="11" type="radio" name="RadioGroup1" value="radio"/>
+            две произвольные точки</label>
+        <br/>
+        <label>
+            <input id="12" type="radio" name="RadioGroup1" value="radio"/>
+            начальная точка, вектор направления отрезка и его длина</label>
+    </p>
+
+    <!--2 вопрос -->
+    <p>2. Что такое разложение в растр?<br>
+        <label>
+            <input id="20" type="radio" name="RadioGroup2" value="radio"/>
+            процесс определения пикселей, аппроксимирующих заданный отрезок</label>
+        <br/>
+        <label>
+            <input id="21" type="radio" name="RadioGroup2" value="radio"/>
+            процесс определения пикселей, наилучшим образом аппроксимирующих заданный отрезок</label>
+        <br/>
+        <label>
+            <input id="22" type="radio" name="RadioGroup2" value="radio"/>
+            процесс определения пикселей, аппроксимирующих заданный отрезок выбираемым образом</label>
+    </p>
+
+    <!--3 вопрос -->
+    <p>3. Какая основная цель для разаботки алгоритмов растеризации?<br>
+        <label>
+            <input id="30" type="radio" name="RadioGroup3" value="radio"/>
+            построение циклов вычисления координат на основе только операций умножения и деления без использования операций сложения и вычитания
+        </label>
+        <br/>
+        <label>
+            <input id="31" type="radio" name="RadioGroup3" value="radio"/>
+            построение отрезков на основе только целочисленных операций сложения и вычитания без использования операций умножения и деления</label>
+        <br/>
+        <label>
+            <input id="32" type="radio" name="RadioGroup3" value="radio"/>
+            построение циклов вычисления координат на основе только целочисленных операций сложения и вычитания без использования операций умножения и деления</label>
+        <br/>
+        <label>
+            <input id="33" type="radio" name="RadioGroup3" value="radio"/>
+            построение отрезков на основе только операций умножения и деления без использования операций сложения и вычитания</label>
+    </p>
+
+    <!--4 вопрос -->
+    <p>4. Почему возникает ступенчатость?<br/>
+        <label>
+            <input id="40" type="radio" name="RadioGroup4" value="radio"/>
+            потому что точки изображения строятся с определенной погрешностью</label>
+        <br/>
+        <label>
+            <input id="41" type="radio" name="RadioGroup4" value="radio"/>
+            потому что изображение строится из дискретного набора точек</label>
+    </p>
+
+    <!--5 вопрос -->
+    <p>5. Можно ли полностью устранить ступенчатость?<br/>
+        <label>
+            <input id="50" type="radio" name="RadioGroup5" value="radio"/>
+            да</label>
+        <br/>
+        <label>
+            <input id="51" type="radio" name="RadioGroup5" value="radio"/>
+            нет</label>
+        <br/>
+        <label>
+            <input id="52" type="radio" name="RadioGroup5" value="radio"/>
+            не знаю</label>
+    </p>
+
+    <!--6 вопрос -->
+    <p>6. Каким образом алгоритм Брезенхема устраняет ступенчатость?<br/>
+        <label>
+            <input id="60" type="radio" name="RadioGroup6" value="radio"/>
+            трактованием пикселя не как точки, а как конечной области</label>
+        <br/>
+        <label>
+            <input id="61" type="radio" name="RadioGroup6" value="radio"/>
+            увеличением разрешения растра</label>
+    </p>
+
+    <!--7 вопрос -->
+    <p>7. В чем состоит отличие алгоритма Ву от алгоритма Брезенхема?<br/>
+        <label>
+            <input id="70" type="radio" name="RadioGroup7" value="radio"/>
+            на каждом шаге устанавливается не одна, а две точки</label>
+        <br/>
+        <label>
+            <input id="71" type="radio" name="RadioGroup7" value="radio"/>
+            на каждом шаге устанавливается не две, а три точки</label>
+        <br/>
+        <label>
+            <input id="72" type="radio" name="RadioGroup7" value="radio"/>
+            на каждом шаге устанавливается не одна, а две точки
+        </label>
+    </p>
+
+
+    <input type="button" name="Submit" value="проверка" onclick="check(7)"/>
+
+
+</form>
+</body>
+</html>

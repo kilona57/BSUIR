@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/doid/releases/2024-03-28/doid-merged.owl" uri="doid-merged.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/doid/releases/2024-03-28/doid-merged.owl" uri="doid-merged.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1712919998949" name="http://purl.obolibrary.org/obo/doid/doid-merged.owl" uri="doid-merged.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1712919998949" name="http://purl.obolibrary.org/obo/hp.owl" uri="hp.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1712919998949" name="http://www.semanticweb.org/hilona/ontologies/2024/2/untitled-ontology-13" uri="лр2.owx"/>
+    </group>
+</catalog>

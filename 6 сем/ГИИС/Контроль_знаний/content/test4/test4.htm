@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+    <META HTTP-EQUIV="Content-Language" CONTENT="ru">
+    <title>Тест №4</title>
+</head>
+
+<body>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript" src="../check.js"></script>
+<script type="text/javascript">
+    var answers = [0, 2, 1, 0];
+</script>
+
+<form id="form1" name="form1" method="post" action="">
+    <div id="answers">
+    </div>
+    <div align="center">
+        <strong>Тест №4</strong></div>
+
+    <!--1 вопрос -->
+    <p>1. Что является сечением любого круглого конуса плоскостью?<br>
+        <label>
+            <input id="10" type="radio" name="RadioGroup1" value="radio"/>
+            кривая, которая может быть лишь эллипсом</label>
+        <br/>
+        <label>
+            <input id="11" type="radio" name="RadioGroup1" value="radio"/>
+            любая кривая</label>
+        <br/>
+        <label>
+            <input id="12" type="radio" name="RadioGroup1" value="radio"/>
+            ломаная линия</label>
+    </p>
+
+    <!--2 вопрос -->
+    <p>2. В чем заключается алгоритм Брезенхема для генерации окружности?<br>
+        <label>
+            <input id="20" type="radio" name="RadioGroup2" value="radio"/>
+            в нахождении такого множества отрезков, которое наилучшим образом аппроксимирует кривую</label>
+        <br/>
+        <label>
+            <input id="21" type="radio" name="RadioGroup2" value="radio"/>
+            в нахождении такого множества пар пикселей, которое наилучшим образом аппроксимирует кривую</label>
+        <br/>
+        <label>
+            <input id="22" type="radio" name="RadioGroup2" value="radio"/>
+            в нахождении такого множества пикселей, которое наилучшим образом аппроксимирует кривую</label>
+    </p>
+
+    <!--3 вопрос -->
+    <p>3. С какой точки начинает работать алгоритм Брезенхема?<br>
+        <label>
+            <input id="30" type="radio" name="RadioGroup3" value="radio"/>
+            с точки (0, 0)
+        </label>
+        <br/>
+        <label>
+            <input id="31" type="radio" name="RadioGroup3" value="radio"/>
+            с точки (0, R)</label>
+        <br/>
+        <label>
+            <input id="32" type="radio" name="RadioGroup3" value="radio"/>
+            с точки (R, 0)</label>
+        <br/>
+        <label>
+            <input id="33" type="radio" name="RadioGroup3" value="radio"/>
+            с точки (R, R)</label>
+    </p>
+
+    <!--4 вопрос -->
+    <p>4. Что такое ошибка?<br/>
+        <label>
+            <input id="40" type="radio" name="RadioGroup4" value="radio"/>
+            разность между центром пикселя и действительным положением окружности</label>
+        <br/>
+        <label>
+            <input id="41" type="radio" name="RadioGroup4" value="radio"/>
+            разность между дальней к центру окуржности границей пикселя и действительным положением окружности</label>
+        <br>
+        <label>
+            <input id="42" type="radio" name="RadioGroup4" value="radio"/>
+            разность между ближней к центру окуржности границей границей пикселя и действительным положением окружности
+        </label>
+    </p>
+
+
+    <input type="button" name="Submit" value="проверка" onclick="check(4)"/>
+
+
+</form>
+</body>
+</html>

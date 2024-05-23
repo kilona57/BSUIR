@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+    <META HTTP-EQUIV="Content-Language" CONTENT="ru">
+    <title>Тест №10</title>
+</head>
+
+<body>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript" src="../check.js"></script>
+<script type="text/javascript">
+    var answers = [1, 2, 0, 0, 2, 1, 0];
+</script>
+
+<form id="form1" name="form1" method="post" action="">
+    <div id="answers">
+    </div>
+    <div align="center">
+        <strong>Тест №10 </strong></div>
+
+    <!--1 вопрос -->
+    <p>1. Open GL - это?<br>
+        <label>
+            <input id="10" type="radio" name="RadioGroup1" value="radio"/>
+            открытая графовая библиотека</label>
+        <br/>
+        <label>
+            <input id="11" type="radio" name="RadioGroup1" value="radio"/>
+            открытая графическая библиотека</label>
+<br/>
+        <label>
+            <input id="12" type="radio" name="RadioGroup1" value="radio"/>
+            открытая графовая сеть</label>
+    </p>
+
+    <!--2 вопрос -->
+    <p>2. Какая библиотека стала основой стандарта Open GL?<br>
+        <label>
+            <input id="20" type="radio" name="RadioGroup2" value="radio"/>
+            IR GL</label>
+        <br/>
+        <label>
+            <input id="21" type="radio" name="RadioGroup2" value="radio"/>
+            IRI GL</label> <br/>
+        <label>
+            <input id="22" type="radio" name="RadioGroup2" value="radio"/>
+            IRIS GL</label>
+        
+    </p>
+
+    <!--3 вопрос -->
+    <p>3. Из чего состоит OpenGL?<br>
+        <label>
+            <input id="30" type="radio" name="RadioGroup3" value="radio"/>
+            набора библиотек</label>
+        <br/>
+        <label>
+            <input id="31" type="radio" name="RadioGroup3" value="radio"/>
+            набора команд</label><br/>
+        <label>
+            <input id="32" type="radio" name="RadioGroup3" value="radio"/>
+            набора атрибутов</label>
+    </p>
+
+    <!--4 вопрос -->
+    <p>4. В какой модели реализованы функции OpenGL? <br/>
+        <label>
+            <input id="40" type="radio" name="RadioGroup4" value="radio"/>
+            клиент-сервер</label>
+        <br/>
+        <label>
+            <input id="41" type="radio" name="RadioGroup4" value="radio"/>
+             клиент-клиент</label>
+        <br/>
+        <label>
+            <input id="42" type="radio" name="RadioGroup4" value="radio"/>
+            сервер-сервер
+        </label>
+    </p>
+
+    <!--5 вопрос -->
+    <p>5. Что содержит библиотека DirectX?<br/>
+        <label>
+            <input id="50" type="radio" name="RadioGroup5" value="radio"/>
+            высокоуровневый программный интерфейс</label>
+        <br/>
+        <label>
+            <input id="51" type="radio" name="RadioGroup5" value="radio"/>
+           набор высокоуровневых программных интерфейсов</label>
+        <br/>
+        <label>
+            <input id="52" type="radio" name="RadioGroup5" value="radio"/>
+            набор низкоуровневых программных интерфейсов
+        </label>
+    </p>
+
+    <!--6 вопрос -->
+    <p>6. ARB - это?<br/>
+        <label>
+            <input id="60" type="radio" name="RadioGroup6" value="radio"/>
+            комитет по внедрению архитектуры</label>
+        <br/>
+        <label>
+            <input id="61" type="radio" name="RadioGroup6" value="radio"/>
+            комитет по пересмотру архитектуры</label>
+        <br/>
+        <label>
+            <input id="62" type="radio" name="RadioGroup6" value="radio"/>
+            комитет по освоению архитектуры
+        </label>
+    </p>
+
+    <!--7 вопрос -->
+    <p>7. На какой модели основан DirectX? <br/>
+        <label>
+            <input id="70" type="radio" name="RadioGroup7" value="radio"/>
+            COM</label>
+        <br/>
+        <label>
+            <input id="71" type="radio" name="RadioGroup7" value="radio"/>
+            DOM</label>
+        <br/>
+        <label>
+            <input id="72" type="radio" name="RadioGroup7" value="radio"/>
+            SOM
+        </label>
+
+    </p>
+
+    <input type="button" name="Submit" value="проверка" onclick="check(7)"/>
+
+
+</form>
+</body>
+</html>

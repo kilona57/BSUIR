@@ -1,0 +1,284 @@
+<!-- (C) 2004-06 Nick G Shchetko, Anatoly A Matveev for Military Faculty, BSUIR -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<title>Лабораторная работа №1</title>
+<base target="_top">
+</HEAD><BODY>
+<div align="center">
+  <p><strong>Лабораторная работа № 1</strong></p>
+</div>
+<p><strong>Тема:</strong></p>
+<p>Генерация отрезков.</p>
+<p><strong>Задание:</strong></p>
+<p>Разработать элементарный графический редактор, реализующий построение отрезков с помощью алгоритма ЦДА, целочисленного алгоритм Брезенхема и алгоритма Ву. Вызов способа генерации отрезка задается из пункта меню и доступно через панель инструментов «Отрезки». В редакторе кроме режима генерации отрезков в пользовательском окне должен быть предусмотрен отладочный режим, где отображается пошаговое решение на дискретной сетке.</p>
+<p><strong>Теоретические сведения:</strong></p>
+<a href="../../../Теория/content/lk3/lk3.htm">См.тему №3.</a>
+<div class=Section1>
+<p><strong>Упражнения для самостоятельной работы:</strong></p>
+
+<p>Упражнение 3.1.</span></span> Методом ЦДА разложите в растр отрезок из точки <sub><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:42pt;
+ height:18.75pt' o:ole="">
+ <v:imagedata src=" ../../images/lb1/image001.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=56 height=25
+src=" ../../images/lb1/image002.gif" v:shapes="_x0000_i1025"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1365886371">
+ </o:OLEObject>
+</xml><![endif]-->в точку <sub><!--[if gte vml 1]><v:shape id="_x0000_i1026"
+ type="#_x0000_t75" style='width:45pt;height:18.75pt' o:ole="">
+ <v:imagedata src=" ../../images/lb1/image003.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=60 height=25
+src=" ../../images/lb1/image004.gif" v:shapes="_x0000_i1026"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1026"
+  DrawAspect="Content" ObjectID="_1365886373">
+ </o:OLEObject>
+</xml><![endif]-->. Представьте результаты пошагового выполнения алгоритма в
+виде следующей таблицы: </p>
+<div align=left>
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=518
+ style='width:388.15pt;border-collapse:collapse;border:
+ none;mso-border-alt:solid windowtext .5pt;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;page-break-inside:avoid'>
+  <td width=73 valign=top style='width:55.05pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span class=SpellE><i
+  style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-ansi-language:
+  EN-US'>i</span></i></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  </td>
+  
+  <td width=54 valign=top style='width:40.75pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span class=SpellE><i
+  style='mso-bidi-font-style:normal'>х</i></span><i style='mso-bidi-font-style:
+  normal'><o:p></o:p></i></p>
+  </td>
+  <td width=54 valign=top style='width:40.75pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span class=SpellE><i
+  style='mso-bidi-font-style:normal'>y</i></span><i style='mso-bidi-font-style:
+  normal'><o:p></o:p></i></p>
+  </td>
+  
+  <td width=123 valign=top style='width:92.15pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;page-break-after:
+  avoid'><span class=SpellE>Plot</span> (<span class=SpellE><i
+  style='mso-bidi-font-style:normal'>х</i></span>,&nbsp;<i style='mso-bidi-font-style:
+  normal'>у</i>)</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes;page-break-inside:avoid'>
+  <td width=73 valign=bottom style='width:55.05pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+  </td>
+  
+  <td width=54 valign=bottom style='width:40.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=54 valign=bottom style='width:40.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+  </td>
+ 
+  <td width=123 valign=bottom style='width:92.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p>Рассмотрите следующие случаи: </p>
+
+<p><span class=GramE><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-ansi-language:
+EN-US'>x</span></i><sub>1</sub></span> = 0, <i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='mso-ansi-language:EN-US'>x</span></i><sub>2</sub> =<span
+style='mso-spacerun:yes'>  </span>8, <span lang=EN-US style='mso-ansi-language:
+EN-US'>&nbsp;<i style='mso-bidi-font-style:normal'>y</i></span><sub>1</sub> =
+0, <i style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-ansi-language:
+EN-US'>y</span></i><sub>2</sub> =<span style='mso-spacerun:yes'>  </span>5;</p>
+
+<p ><span class=GramE><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-ansi-language:
+EN-US'>x</span></i><sub><span lang=EN-US style='mso-ansi-language:EN-US'>1</span></sub></span><span
+lang=EN-US style='mso-ansi-language:EN-US'> = 0, <i style='mso-bidi-font-style:
+normal'>x</i><sub>2</sub> = –8, <i style='mso-bidi-font-style:normal'>y</i><sub>1</sub>
+= 0, <i style='mso-bidi-font-style:normal'>y</i><sub>2</sub> =<span
+style='mso-spacerun:yes'>  </span>5;<o:p></o:p></span></p>
+
+<p ><span class=GramE><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-ansi-language:
+EN-US'>x</span></i><sub><span lang=EN-US style='mso-ansi-language:EN-US'>1</span></sub></span><span
+lang=EN-US style='mso-ansi-language:EN-US'> = 0, <i style='mso-bidi-font-style:
+normal'>x</i><sub>2</sub> = –8, <i style='mso-bidi-font-style:normal'>y</i><sub>1</sub>
+= 0, <i style='mso-bidi-font-style:normal'>y</i><sub>2</sub> = –5;<o:p></o:p></span></p>
+
+<p ><span class=GramE><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-ansi-language:
+EN-US'>x</span></i><sub><span lang=EN-US style='mso-ansi-language:EN-US'>1</span></sub></span><span
+lang=EN-US style='mso-ansi-language:EN-US'> = 0, <i style='mso-bidi-font-style:
+normal'>x</i><sub>2</sub> =<span style='mso-spacerun:yes'>  </span>8, &nbsp;<i
+style='mso-bidi-font-style:normal'>y</i><sub>1</sub> = 0, <i style='mso-bidi-font-style:
+normal'>y</i><sub>2</sub> = –5.<o:p></o:p></span></p>
+
+<p >Приведите
+алгоритмическую оценку алгоритма.</p>
+
+<p ><span class=keyword><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;line-height:130%;color:windowtext'>Упражнение
+3.2. </span></span>На основе целочисленного алгоритма <span class=SpellE>Брезенхема</span>
+для первого октанта разработайте обобщенный целочисленный алгоритм <span
+class=SpellE>Брезенхема</span> генерации отрезков для всех квадрантов.<span
+style='mso-spacerun:yes'>  </span>Разложите в растр отрезок из точки <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1027" type="#_x0000_t75" style='width:42pt;height:18.75pt' o:ole="">
+ <v:imagedata src=" ../../images/lb1/image001.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=56 height=25
+src=" ../../images/lb1/image002.gif" v:shapes="_x0000_i1027"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1027"
+  DrawAspect="Content" ObjectID="_1365886374">
+ </o:OLEObject>
+</xml><![endif]-->в точку <sub><!--[if gte vml 1]><v:shape id="_x0000_i1028"
+ type="#_x0000_t75" style='width:45pt;height:18.75pt' o:ole="">
+ <v:imagedata src=" ../../images/lb1/image003.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=60 height=25
+src=" ../../images/lb1/image004.gif" v:shapes="_x0000_i1028"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1028"
+  DrawAspect="Content" ObjectID="_1365886376">
+ </o:OLEObject>
+</xml><![endif]-->. Представьте результаты пошагового выполнения алгоритма в
+виде следующей таблицы: </p>
+<div align=left>
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=518
+ style='width:388.15pt;border-collapse:collapse;border:
+ none;mso-border-alt:solid windowtext .5pt;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;page-break-inside:avoid'>
+  <td width=73 valign=top style='width:55.05pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span class=SpellE><i
+  style='mso-bidi-font-style:normal'><span lang=EN-US style='mso-ansi-language:
+  EN-US'>i</span></i></span><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=54 valign=top style='width:40.75pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><i
+  style='mso-bidi-font-style:normal'>е<o:p></o:p></i></p>
+  </td>
+  <td width=54 valign=top style='width:40.75pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span class=SpellE><i
+  style='mso-bidi-font-style:normal'>х</i></span><i style='mso-bidi-font-style:
+  normal'><o:p></o:p></i></p>
+  </td>
+  <td width=54 valign=top style='width:40.75pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span class=SpellE><i
+  style='mso-bidi-font-style:normal'>y</i></span><i style='mso-bidi-font-style:
+  normal'><o:p></o:p></i></p>
+  </td>
+  <td width=158 valign=top style='width:118.7pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;page-break-after:
+  avoid'><i style='mso-bidi-font-style:normal'>е</i><span lang=EN-US
+  style='mso-ansi-language:EN-US'>’<o:p></o:p></span></p>
+  </td>
+  <td width=123 valign=top style='width:92.15pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;page-break-after:
+  avoid'><span class=SpellE>Plot</span> (<span class=SpellE><i
+  style='mso-bidi-font-style:normal'>х</i></span>,&nbsp;<i style='mso-bidi-font-style:
+  normal'>у</i>)</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes;page-break-inside:avoid'>
+  <td width=73 valign=bottom style='width:55.05pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=54 valign=top style='width:40.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=54 valign=bottom style='width:40.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=54 valign=bottom style='width:40.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=158 valign=top style='width:118.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=123 valign=bottom style='width:92.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p >Рассмотрите случаи из упражнения 1.1. Приведите алгоритмическую оценку алгоритма.</p>
+
+<p><span class=keyword><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;line-height:130%;color:windowtext'>Упражнение
+3.3. </span></span>Составьте схему алгоритма <span class=SpellE>Ву</span>,
+обеспечивающего устранение лестничного эффекта. Сравните результаты работы
+алгоритма с алгоритмом <span class=SpellE>Брезенхема</span>. Рассмотрите случаи
+из упражнения 3.1. </p>
+
+</div>
+</BODY>
+</HTML>

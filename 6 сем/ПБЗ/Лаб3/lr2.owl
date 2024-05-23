@@ -1,0 +1,1448 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/hilona/ontologies/2024/2/untitled-ontology-13"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/hilona/ontologies/2024/2/untitled-ontology-13">
+    <Prefix name="" IRI="http://www.semanticweb.org/hilona/ontologies/2024/2/untitled-ontology-13"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Бактериальная_пневмония"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Бактериальные_инфекционные_заболевания"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Бактериальный_менингит"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Бактерии"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Бациллы"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Болезнь"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Вибриллы"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Вирусные_инфекционные_заболевания"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Вирусы"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Возпалительные_заболевания_скелета"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Дыхательная_система"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Заболевания_ЦНС"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Заболевания_анатамического_образования"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Заболевания_глаза"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Заболевания_дыхательной_системы"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Заболевания_желудка"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Заболевания_конъюктивы"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Заболевания_мочевыделительной_системы"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Заболевания_мочеточников"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Заболевания_нервной_системы"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Заболевания_опорно-двигательной_системы"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Заболевания_органов_чувств"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Заболевания_пищеварительной_системы"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Заболевания_половой_системы"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Заболевания_скелета"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Зоболевания_легких"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Инфекционные_заболевания"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Кокки"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Конъюктивит"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Лимфатическая_система"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Менингит"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Мочевыделительная_система"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Нервная_система"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Опорно-двигательная_система"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Органы_чувств"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Остеомиелит"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ПНС"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Пищеварительная_система"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Пневмония"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Покровная_система"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Сердечно-сосудистая_система"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Система_кровообращения"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Системы_органов"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Спириллы"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Функции_органов"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ЦНС"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#возбудитель"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_форму"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_функцию"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#осложнение"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#поражает"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#состоит_из"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Артерии"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Бактериальный_гастрит"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Бактериальный_конъюктивит"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Бронхи"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Варолиев_мозг"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Вены"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Височная_кость"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Внутреннее_ухо"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Всасывательная"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Газообмен"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ганглии"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Гладкие_мышцы"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Глаза"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Глотка"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Головной_мозг"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Гортань"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Двенадцатиперстная_кишка"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Двигательная"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Желудок"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Желчный_пузырь"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Защитная"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Зубы"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Инфекция_мочевыводящих_путей"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ионорегулирующая"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Капилляры"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Кожа"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Конечный_мозг"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Конъюктива"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Костный_мозг"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Косточки"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Кроветворная"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Легкие"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Лимфатические_сосуды"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Лимфопоэз"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Лимфоузлы"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Менингококк"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Менингококковый_менингит"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Метаболистическая"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Мозговой_ствол"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Мозжечок"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Моторная"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Мочевой_пузырь"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Мочеточники"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Мультфокальный_остеомиелит"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Мышечная_система"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Накопительная"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Наружное_ухо"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Нервы"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Околоушные_слюнные_железы"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Опорная"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Осморегулирующая"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Перепонка"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Петрозит"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Печень"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Пищевод"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Подвздошная_кишка"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Поджелудочная_железа"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Подкожная_ткань"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Подчелюстные_слюнные_железы"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Подъязычные_слюнные_железы"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Полость_носа"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Полукружные_каналы"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Почки"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Преддверие_уха"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Продолговатый_мозг"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Промежуточный_мозг"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Радужные_оболочки"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Рефлекторная"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Роговицы"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Рот"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Связки"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Секреторная"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Селезёнка"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Сердечные_мышцы"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Сердце"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Сетчатка"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Скелет"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Скелетные_мышцы"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Слюнные_железы"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Спинной_мозг"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Спинномозговые_нервы"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Среднее_ухо"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Средний_мозг"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Стафилококк"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Стрептококк"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Стрептококковая_пневмония"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Стрептококковый_менингит"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Суставы"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Терморегуляция"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Тимус"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Толстая_кишка"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Тонкая_кишка"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Тощая_кишка"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Трахея"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Улитки"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ухо"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Фильтрационная"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Формировочная"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Хеликобактер_пилори"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Хламидиозная_пневмония"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Хламидия"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Хрусталик"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Цилиарное_тело"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Черепные_нервы"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Экзокринная"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Экскреторная"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Эндокринная"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Энергетическая"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Энтеральная_нервная_система"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Язва_желудка"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Язык"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Бактериальная_пневмония"/>
+        <Class IRI="#Бактериальные_инфекционные_заболевания"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Бактериальная_пневмония"/>
+        <Class IRI="#Пневмония"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Бактериальные_инфекционные_заболевания"/>
+        <Class IRI="#Инфекционные_заболевания"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Бактериальный_менингит"/>
+        <Class IRI="#Бактериальные_инфекционные_заболевания"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Бактериальный_менингит"/>
+        <Class IRI="#Менингит"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Бактерии"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#иметь_форму"/>
+            <Class IRI="#Бациллы"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Бактерии"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#иметь_форму"/>
+            <Class IRI="#Вибриллы"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Бактерии"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#иметь_форму"/>
+            <Class IRI="#Кокки"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Бактерии"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#иметь_форму"/>
+            <Class IRI="#Спириллы"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Бациллы"/>
+        <Class IRI="#Бактерии"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Вибриллы"/>
+        <Class IRI="#Бактерии"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Вирусные_инфекционные_заболевания"/>
+        <Class IRI="#Инфекционные_заболевания"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Возпалительные_заболевания_скелета"/>
+        <Class IRI="#Заболевания_скелета"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Дыхательная_система"/>
+        <Class IRI="#Системы_органов"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Заболевания_ЦНС"/>
+        <Class IRI="#Заболевания_нервной_системы"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Заболевания_анатамического_образования"/>
+        <Class IRI="#Болезнь"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Заболевания_глаза"/>
+        <Class IRI="#Заболевания_органов_чувств"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Заболевания_дыхательной_системы"/>
+        <Class IRI="#Заболевания_анатамического_образования"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Заболевания_желудка"/>
+        <Class IRI="#Заболевания_пищеварительной_системы"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Заболевания_конъюктивы"/>
+        <Class IRI="#Заболевания_глаза"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Заболевания_мочевыделительной_системы"/>
+        <Class IRI="#Заболевания_анатамического_образования"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Заболевания_мочеточников"/>
+        <Class IRI="#Заболевания_мочевыделительной_системы"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Заболевания_нервной_системы"/>
+        <Class IRI="#Заболевания_анатамического_образования"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Заболевания_опорно-двигательной_системы"/>
+        <Class IRI="#Заболевания_анатамического_образования"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Заболевания_органов_чувств"/>
+        <Class IRI="#Заболевания_нервной_системы"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Заболевания_пищеварительной_системы"/>
+        <Class IRI="#Заболевания_анатамического_образования"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Заболевания_половой_системы"/>
+        <Class IRI="#Заболевания_анатамического_образования"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Заболевания_скелета"/>
+        <Class IRI="#Заболевания_опорно-двигательной_системы"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Зоболевания_легких"/>
+        <Class IRI="#Заболевания_дыхательной_системы"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Инфекционные_заболевания"/>
+        <Class IRI="#Болезнь"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Кокки"/>
+        <Class IRI="#Бактерии"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Конъюктивит"/>
+        <Class IRI="#Заболевания_конъюктивы"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Лимфатическая_система"/>
+        <Class IRI="#Система_кровообращения"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Менингит"/>
+        <Class IRI="#Заболевания_ЦНС"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Мочевыделительная_система"/>
+        <Class IRI="#Системы_органов"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Нервная_система"/>
+        <Class IRI="#Системы_органов"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Опорно-двигательная_система"/>
+        <Class IRI="#Системы_органов"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Органы_чувств"/>
+        <Class IRI="#Нервная_система"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Остеомиелит"/>
+        <Class IRI="#Бактериальные_инфекционные_заболевания"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Остеомиелит"/>
+        <Class IRI="#Возпалительные_заболевания_скелета"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ПНС"/>
+        <Class IRI="#Нервная_система"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Пищеварительная_система"/>
+        <Class IRI="#Системы_органов"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Пневмония"/>
+        <Class IRI="#Зоболевания_легких"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Покровная_система"/>
+        <Class IRI="#Системы_органов"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Сердечно-сосудистая_система"/>
+        <Class IRI="#Система_кровообращения"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Система_кровообращения"/>
+        <Class IRI="#Системы_органов"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Спириллы"/>
+        <Class IRI="#Бактерии"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ЦНС"/>
+        <Class IRI="#Нервная_система"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Сердечно-сосудистая_система"/>
+        <NamedIndividual IRI="#Артерии"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Бактериальные_инфекционные_заболевания"/>
+        <NamedIndividual IRI="#Бактериальный_гастрит"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Заболевания_желудка"/>
+        <NamedIndividual IRI="#Бактериальный_гастрит"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Бактериальные_инфекционные_заболевания"/>
+        <NamedIndividual IRI="#Бактериальный_конъюктивит"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Конъюктивит"/>
+        <NamedIndividual IRI="#Бактериальный_конъюктивит"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Дыхательная_система"/>
+        <NamedIndividual IRI="#Бронхи"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Сердечно-сосудистая_система"/>
+        <NamedIndividual IRI="#Вены"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Функции_органов"/>
+        <NamedIndividual IRI="#Всасывательная"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Функции_органов"/>
+        <NamedIndividual IRI="#Газообмен"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Органы_чувств"/>
+        <NamedIndividual IRI="#Глаза"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Дыхательная_система"/>
+        <NamedIndividual IRI="#Глотка"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Пищеварительная_система"/>
+        <NamedIndividual IRI="#Глотка"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ЦНС"/>
+        <NamedIndividual IRI="#Головной_мозг"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Дыхательная_система"/>
+        <NamedIndividual IRI="#Гортань"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Функции_органов"/>
+        <NamedIndividual IRI="#Двигательная"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Пищеварительная_система"/>
+        <NamedIndividual IRI="#Желудок"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Функции_органов"/>
+        <NamedIndividual IRI="#Защитная"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Бактериальные_инфекционные_заболевания"/>
+        <NamedIndividual IRI="#Инфекция_мочевыводящих_путей"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Заболевания_мочеточников"/>
+        <NamedIndividual IRI="#Инфекция_мочевыводящих_путей"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Функции_органов"/>
+        <NamedIndividual IRI="#Ионорегулирующая"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Сердечно-сосудистая_система"/>
+        <NamedIndividual IRI="#Капилляры"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Покровная_система"/>
+        <NamedIndividual IRI="#Кожа"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Лимфатическая_система"/>
+        <NamedIndividual IRI="#Костный_мозг"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Функции_органов"/>
+        <NamedIndividual IRI="#Кроветворная"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Дыхательная_система"/>
+        <NamedIndividual IRI="#Легкие"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Лимфатическая_система"/>
+        <NamedIndividual IRI="#Лимфатические_сосуды"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Функции_органов"/>
+        <NamedIndividual IRI="#Лимфопоэз"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Лимфатическая_система"/>
+        <NamedIndividual IRI="#Лимфоузлы"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Бактериальный_менингит"/>
+        <NamedIndividual IRI="#Менингококковый_менингит"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Функции_органов"/>
+        <NamedIndividual IRI="#Метаболистическая"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ЦНС"/>
+        <NamedIndividual IRI="#Мозговой_ствол"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ЦНС"/>
+        <NamedIndividual IRI="#Мозжечок"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Функции_органов"/>
+        <NamedIndividual IRI="#Моторная"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Мочевыделительная_система"/>
+        <NamedIndividual IRI="#Мочевой_пузырь"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Мочевыделительная_система"/>
+        <NamedIndividual IRI="#Мочеточники"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Остеомиелит"/>
+        <NamedIndividual IRI="#Мультфокальный_остеомиелит"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Опорно-двигательная_система"/>
+        <NamedIndividual IRI="#Мышечная_система"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Функции_органов"/>
+        <NamedIndividual IRI="#Накопительная"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ПНС"/>
+        <NamedIndividual IRI="#Нервы"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Функции_органов"/>
+        <NamedIndividual IRI="#Опорная"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Функции_органов"/>
+        <NamedIndividual IRI="#Осморегулирующая"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Остеомиелит"/>
+        <NamedIndividual IRI="#Петрозит"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Пищеварительная_система"/>
+        <NamedIndividual IRI="#Печень"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Пищеварительная_система"/>
+        <NamedIndividual IRI="#Пищевод"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Пищеварительная_система"/>
+        <NamedIndividual IRI="#Поджелудочная_железа"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Покровная_система"/>
+        <NamedIndividual IRI="#Подкожная_ткань"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Дыхательная_система"/>
+        <NamedIndividual IRI="#Полость_носа"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Мочевыделительная_система"/>
+        <NamedIndividual IRI="#Почки"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Функции_органов"/>
+        <NamedIndividual IRI="#Рефлекторная"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Пищеварительная_система"/>
+        <NamedIndividual IRI="#Рот"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Опорно-двигательная_система"/>
+        <NamedIndividual IRI="#Связки"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Функции_органов"/>
+        <NamedIndividual IRI="#Секреторная"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Лимфатическая_система"/>
+        <NamedIndividual IRI="#Селезёнка"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Сердечно-сосудистая_система"/>
+        <NamedIndividual IRI="#Сердце"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Опорно-двигательная_система"/>
+        <NamedIndividual IRI="#Скелет"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Пищеварительная_система"/>
+        <NamedIndividual IRI="#Слюнные_железы"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ЦНС"/>
+        <NamedIndividual IRI="#Спинной_мозг"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Кокки"/>
+        <NamedIndividual IRI="#Стафилококк"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Кокки"/>
+        <NamedIndividual IRI="#Стрептококк"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Бактериальная_пневмония"/>
+        <NamedIndividual IRI="#Стрептококковая_пневмония"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Бактериальный_менингит"/>
+        <NamedIndividual IRI="#Стрептококковый_менингит"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Опорно-двигательная_система"/>
+        <NamedIndividual IRI="#Суставы"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Функции_органов"/>
+        <NamedIndividual IRI="#Терморегуляция"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Лимфатическая_система"/>
+        <NamedIndividual IRI="#Тимус"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Пищеварительная_система"/>
+        <NamedIndividual IRI="#Толстая_кишка"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Пищеварительная_система"/>
+        <NamedIndividual IRI="#Тонкая_кишка"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Дыхательная_система"/>
+        <NamedIndividual IRI="#Трахея"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Органы_чувств"/>
+        <NamedIndividual IRI="#Ухо"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Функции_органов"/>
+        <NamedIndividual IRI="#Фильтрационная"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Функции_органов"/>
+        <NamedIndividual IRI="#Формировочная"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Спириллы"/>
+        <NamedIndividual IRI="#Хеликобактер_пилори"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Бактериальная_пневмония"/>
+        <NamedIndividual IRI="#Хламидиозная_пневмония"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Кокки"/>
+        <NamedIndividual IRI="#Хламидия"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Функции_органов"/>
+        <NamedIndividual IRI="#Экзокринная"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Функции_органов"/>
+        <NamedIndividual IRI="#Экскреторная"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Функции_органов"/>
+        <NamedIndividual IRI="#Эндокринная"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Функции_органов"/>
+        <NamedIndividual IRI="#Энергетическая"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Заболевания_желудка"/>
+        <NamedIndividual IRI="#Язва_желудка"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Органы_чувств"/>
+        <NamedIndividual IRI="#Язык"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#осложнение"/>
+        <NamedIndividual IRI="#Бактериальный_гастрит"/>
+        <NamedIndividual IRI="#Язва_желудка"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#поражает"/>
+        <NamedIndividual IRI="#Бактериальный_гастрит"/>
+        <NamedIndividual IRI="#Желудок"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#поражает"/>
+        <NamedIndividual IRI="#Бактериальный_конъюктивит"/>
+        <NamedIndividual IRI="#Конъюктива"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Внутреннее_ухо"/>
+        <NamedIndividual IRI="#Полукружные_каналы"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Внутреннее_ухо"/>
+        <NamedIndividual IRI="#Преддверие_уха"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Внутреннее_ухо"/>
+        <NamedIndividual IRI="#Улитки"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Глаза"/>
+        <NamedIndividual IRI="#Конъюктива"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Глаза"/>
+        <NamedIndividual IRI="#Радужные_оболочки"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Глаза"/>
+        <NamedIndividual IRI="#Роговицы"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Глаза"/>
+        <NamedIndividual IRI="#Сетчатка"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Глаза"/>
+        <NamedIndividual IRI="#Хрусталик"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Глаза"/>
+        <NamedIndividual IRI="#Цилиарное_тело"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Головной_мозг"/>
+        <NamedIndividual IRI="#Конечный_мозг"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Головной_мозг"/>
+        <NamedIndividual IRI="#Промежуточный_мозг"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_функцию"/>
+        <NamedIndividual IRI="#Желудок"/>
+        <NamedIndividual IRI="#Всасывательная"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_функцию"/>
+        <NamedIndividual IRI="#Желудок"/>
+        <NamedIndividual IRI="#Защитная"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_функцию"/>
+        <NamedIndividual IRI="#Желудок"/>
+        <NamedIndividual IRI="#Накопительная"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_функцию"/>
+        <NamedIndividual IRI="#Желудок"/>
+        <NamedIndividual IRI="#Секреторная"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_функцию"/>
+        <NamedIndividual IRI="#Желудок"/>
+        <NamedIndividual IRI="#Экскреторная"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_функцию"/>
+        <NamedIndividual IRI="#Желудок"/>
+        <NamedIndividual IRI="#Эндокринная"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#поражает"/>
+        <NamedIndividual IRI="#Инфекция_мочевыводящих_путей"/>
+        <NamedIndividual IRI="#Мочеточники"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_функцию"/>
+        <NamedIndividual IRI="#Конечный_мозг"/>
+        <NamedIndividual IRI="#Рефлекторная"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_функцию"/>
+        <NamedIndividual IRI="#Легкие"/>
+        <NamedIndividual IRI="#Газообмен"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_функцию"/>
+        <NamedIndividual IRI="#Легкие"/>
+        <NamedIndividual IRI="#Терморегуляция"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#возбудитель"/>
+        <NamedIndividual IRI="#Менингококк"/>
+        <NamedIndividual IRI="#Менингококковый_менингит"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#поражает"/>
+        <NamedIndividual IRI="#Менингококковый_менингит"/>
+        <NamedIndividual IRI="#Головной_мозг"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Мозговой_ствол"/>
+        <NamedIndividual IRI="#Варолиев_мозг"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Мозговой_ствол"/>
+        <NamedIndividual IRI="#Продолговатый_мозг"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Мозговой_ствол"/>
+        <NamedIndividual IRI="#Средний_мозг"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#поражает"/>
+        <NamedIndividual IRI="#Мультфокальный_остеомиелит"/>
+        <NamedIndividual IRI="#Скелет"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_функцию"/>
+        <NamedIndividual IRI="#Мышечная_система"/>
+        <NamedIndividual IRI="#Двигательная"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_функцию"/>
+        <NamedIndividual IRI="#Мышечная_система"/>
+        <NamedIndividual IRI="#Защитная"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_функцию"/>
+        <NamedIndividual IRI="#Мышечная_система"/>
+        <NamedIndividual IRI="#Формировочная"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_функцию"/>
+        <NamedIndividual IRI="#Мышечная_система"/>
+        <NamedIndividual IRI="#Энергетическая"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Мышечная_система"/>
+        <NamedIndividual IRI="#Гладкие_мышцы"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Мышечная_система"/>
+        <NamedIndividual IRI="#Сердечные_мышцы"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Мышечная_система"/>
+        <NamedIndividual IRI="#Скелетные_мышцы"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Нервы"/>
+        <NamedIndividual IRI="#Ганглии"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Нервы"/>
+        <NamedIndividual IRI="#Спинномозговые_нервы"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Нервы"/>
+        <NamedIndividual IRI="#Черепные_нервы"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Нервы"/>
+        <NamedIndividual IRI="#Энтеральная_нервная_система"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#поражает"/>
+        <NamedIndividual IRI="#Петрозит"/>
+        <NamedIndividual IRI="#Височная_кость"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Печень"/>
+        <NamedIndividual IRI="#Желчный_пузырь"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_функцию"/>
+        <NamedIndividual IRI="#Пищевод"/>
+        <NamedIndividual IRI="#Моторная"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_функцию"/>
+        <NamedIndividual IRI="#Почки"/>
+        <NamedIndividual IRI="#Ионорегулирующая"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_функцию"/>
+        <NamedIndividual IRI="#Почки"/>
+        <NamedIndividual IRI="#Кроветворная"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_функцию"/>
+        <NamedIndividual IRI="#Почки"/>
+        <NamedIndividual IRI="#Метаболистическая"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_функцию"/>
+        <NamedIndividual IRI="#Почки"/>
+        <NamedIndividual IRI="#Осморегулирующая"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_функцию"/>
+        <NamedIndividual IRI="#Почки"/>
+        <NamedIndividual IRI="#Экскреторная"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_функцию"/>
+        <NamedIndividual IRI="#Почки"/>
+        <NamedIndividual IRI="#Эндокринная"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Рот"/>
+        <NamedIndividual IRI="#Зубы"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Рот"/>
+        <NamedIndividual IRI="#Язык"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_функцию"/>
+        <NamedIndividual IRI="#Селезёнка"/>
+        <NamedIndividual IRI="#Лимфопоэз"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_функцию"/>
+        <NamedIndividual IRI="#Скелет"/>
+        <NamedIndividual IRI="#Двигательная"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_функцию"/>
+        <NamedIndividual IRI="#Скелет"/>
+        <NamedIndividual IRI="#Защитная"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_функцию"/>
+        <NamedIndividual IRI="#Скелет"/>
+        <NamedIndividual IRI="#Кроветворная"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_функцию"/>
+        <NamedIndividual IRI="#Скелет"/>
+        <NamedIndividual IRI="#Метаболистическая"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_функцию"/>
+        <NamedIndividual IRI="#Скелет"/>
+        <NamedIndividual IRI="#Опорная"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Скелет"/>
+        <NamedIndividual IRI="#Височная_кость"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_функцию"/>
+        <NamedIndividual IRI="#Слюнные_железы"/>
+        <NamedIndividual IRI="#Фильтрационная"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_функцию"/>
+        <NamedIndividual IRI="#Слюнные_железы"/>
+        <NamedIndividual IRI="#Экзокринная"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_функцию"/>
+        <NamedIndividual IRI="#Слюнные_железы"/>
+        <NamedIndividual IRI="#Экскреторная"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_функцию"/>
+        <NamedIndividual IRI="#Слюнные_железы"/>
+        <NamedIndividual IRI="#Эндокринная"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Слюнные_железы"/>
+        <NamedIndividual IRI="#Околоушные_слюнные_железы"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Слюнные_железы"/>
+        <NamedIndividual IRI="#Подчелюстные_слюнные_железы"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Слюнные_железы"/>
+        <NamedIndividual IRI="#Подъязычные_слюнные_железы"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Среднее_ухо"/>
+        <NamedIndividual IRI="#Косточки"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#возбудитель"/>
+        <NamedIndividual IRI="#Стафилококк"/>
+        <NamedIndividual IRI="#Бактериальный_конъюктивит"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#возбудитель"/>
+        <NamedIndividual IRI="#Стрептококк"/>
+        <NamedIndividual IRI="#Петрозит"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#возбудитель"/>
+        <NamedIndividual IRI="#Стрептококк"/>
+        <NamedIndividual IRI="#Стрептококковая_пневмония"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#возбудитель"/>
+        <NamedIndividual IRI="#Стрептококк"/>
+        <NamedIndividual IRI="#Стрептококковый_менингит"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#поражает"/>
+        <NamedIndividual IRI="#Стрептококковая_пневмония"/>
+        <NamedIndividual IRI="#Легкие"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#поражает"/>
+        <NamedIndividual IRI="#Стрептококковый_менингит"/>
+        <NamedIndividual IRI="#Головной_мозг"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Тонкая_кишка"/>
+        <NamedIndividual IRI="#Двенадцатиперстная_кишка"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Тонкая_кишка"/>
+        <NamedIndividual IRI="#Подвздошная_кишка"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Тонкая_кишка"/>
+        <NamedIndividual IRI="#Тощая_кишка"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Ухо"/>
+        <NamedIndividual IRI="#Внутреннее_ухо"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Ухо"/>
+        <NamedIndividual IRI="#Наружное_ухо"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Ухо"/>
+        <NamedIndividual IRI="#Перепонка"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#состоит_из"/>
+        <NamedIndividual IRI="#Ухо"/>
+        <NamedIndividual IRI="#Среднее_ухо"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#возбудитель"/>
+        <NamedIndividual IRI="#Хеликобактер_пилори"/>
+        <NamedIndividual IRI="#Бактериальный_гастрит"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#поражает"/>
+        <NamedIndividual IRI="#Хламидиозная_пневмония"/>
+        <NamedIndividual IRI="#Легкие"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#возбудитель"/>
+        <NamedIndividual IRI="#Хламидия"/>
+        <NamedIndividual IRI="#Хламидиозная_пневмония"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#поражает"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

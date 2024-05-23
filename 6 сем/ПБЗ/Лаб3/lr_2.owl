@@ -1,0 +1,695 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://www.semanticweb.org/hilona/ontologies/2024/2/untitled-ontology-13"
+         xmlns="http://www.semanticweb.org/hilona/ontologies/2024/2/untitled-ontology-13#">
+
+<owl:Ontology rdf:about="http://www.semanticweb.org/hilona/ontologies/2024/2/untitled-ontology-13"/>
+
+<owl:ObjectProperty rdf:about="#возбудитель"/>
+
+<owl:ObjectProperty rdf:about="#иметь_форму"/>
+
+<owl:ObjectProperty rdf:about="#иметь_функцию"/>
+
+<owl:ObjectProperty rdf:about="#осложнение"/>
+
+<owl:ObjectProperty rdf:about="#поражает">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#состоит_из"/>
+
+<owl:Class rdf:about="#Бактериальная_пневмония">
+  <rdfs:subClassOf rdf:resource="#Бактериальные_инфекционные_заболевания"/>
+  <rdfs:subClassOf rdf:resource="#Пневмония"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Бактериальные_инфекционные_заболевания">
+  <rdfs:subClassOf rdf:resource="#Инфекционные_заболевания"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Пневмония">
+  <rdfs:subClassOf rdf:resource="#Зоболевания_легких"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Инфекционные_заболевания">
+  <rdfs:subClassOf rdf:resource="#Болезнь"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Бактериальный_менингит">
+  <rdfs:subClassOf rdf:resource="#Бактериальные_инфекционные_заболевания"/>
+  <rdfs:subClassOf rdf:resource="#Менингит"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Менингит">
+  <rdfs:subClassOf rdf:resource="#Заболевания_ЦНС"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Бактерии">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#иметь_форму"/>
+      <owl:someValuesFrom rdf:resource="#Бациллы"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#иметь_форму"/>
+      <owl:someValuesFrom rdf:resource="#Вибриллы"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#иметь_форму"/>
+      <owl:someValuesFrom rdf:resource="#Кокки"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#иметь_форму"/>
+      <owl:someValuesFrom rdf:resource="#Спириллы"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#Бациллы">
+  <rdfs:subClassOf rdf:resource="#Бактерии"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Вибриллы">
+  <rdfs:subClassOf rdf:resource="#Бактерии"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Кокки">
+  <rdfs:subClassOf rdf:resource="#Бактерии"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Спириллы">
+  <rdfs:subClassOf rdf:resource="#Бактерии"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Болезнь"/>
+
+<owl:Class rdf:about="#Вирусные_инфекционные_заболевания">
+  <rdfs:subClassOf rdf:resource="#Инфекционные_заболевания"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Вирусы"/>
+
+<owl:Class rdf:about="#Воспалительные_заболевания_скелета">
+  <rdfs:subClassOf rdf:resource="#Заболевания_скелета"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Заболевания_скелета">
+  <rdfs:subClassOf rdf:resource="#Заболевания_опорно-двигательной_системы"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Дыхательная_система">
+  <rdfs:subClassOf rdf:resource="#Системы_органов"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Системы_органов"/>
+
+<owl:Class rdf:about="#Заболевания_ЦНС">
+  <rdfs:subClassOf rdf:resource="#Заболевания_нервной_системы"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Заболевания_нервной_системы">
+  <rdfs:subClassOf rdf:resource="#Заболевания_анатамического_образования"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Заболевания_анатамического_образования">
+  <rdfs:subClassOf rdf:resource="#Болезнь"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Заболевания_глаза">
+  <rdfs:subClassOf rdf:resource="#Заболевания_органов_чувств"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Заболевания_органов_чувств">
+  <rdfs:subClassOf rdf:resource="#Заболевания_нервной_системы"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Заболевания_дыхательной_системы">
+  <rdfs:subClassOf rdf:resource="#Заболевания_анатамического_образования"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Заболевания_желудка">
+  <rdfs:subClassOf rdf:resource="#Заболевания_пищеварительной_системы"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Заболевания_пищеварительной_системы">
+  <rdfs:subClassOf rdf:resource="#Заболевания_анатамического_образования"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Заболевания_конъюктивы">
+  <rdfs:subClassOf rdf:resource="#Заболевания_глаза"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Заболевания_мочевыделительной_системы">
+  <rdfs:subClassOf rdf:resource="#Заболевания_анатамического_образования"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Заболевания_мочеточников">
+  <rdfs:subClassOf rdf:resource="#Заболевания_мочевыделительной_системы"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Заболевания_опорно-двигательной_системы">
+  <rdfs:subClassOf rdf:resource="#Заболевания_анатамического_образования"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Зоболевания_легких">
+  <rdfs:subClassOf rdf:resource="#Заболевания_дыхательной_системы"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Конъюктивит">
+  <rdfs:subClassOf rdf:resource="#Заболевания_конъюктивы"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Лимфатическая_система">
+  <rdfs:subClassOf rdf:resource="#Система_кровообращения"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Система_кровообращения">
+  <rdfs:subClassOf rdf:resource="#Системы_органов"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Мочевыделительная_система">
+  <rdfs:subClassOf rdf:resource="#Системы_органов"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Нервная_система">
+  <rdfs:subClassOf rdf:resource="#Системы_органов"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Опорно-двигательная_система">
+  <rdfs:subClassOf rdf:resource="#Системы_органов"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Органы_чувств">
+  <rdfs:subClassOf rdf:resource="#Нервная_система"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Остеомиелит">
+  <rdfs:subClassOf rdf:resource="#Бактериальные_инфекционные_заболевания"/>
+  <rdfs:subClassOf rdf:resource="#Воспалительные_заболевания_скелета"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ПНС">
+  <rdfs:subClassOf rdf:resource="#Нервная_система"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Пищеварительная_система">
+  <rdfs:subClassOf rdf:resource="#Системы_органов"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Покровная_система">
+  <rdfs:subClassOf rdf:resource="#Системы_органов"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Сердечно-сосудистая_система">
+  <rdfs:subClassOf rdf:resource="#Система_кровообращения"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Функции_органов"/>
+
+<owl:Class rdf:about="#ЦНС">
+  <rdfs:subClassOf rdf:resource="#Нервная_система"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Стафилококковая пневмония">
+  <rdfs:subClassOf rdf:resource="#Бактериальная_пневмония"/>
+</owl:Class>
+
+<owl:NamedIndividual rdf:about="#Артерии">
+  <rdf:type rdf:resource="#Сердечно-сосудистая_система"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Бактериальный_гастрит">
+  <rdf:type rdf:resource="#Бактериальные_инфекционные_заболевания"/>
+  <rdf:type rdf:resource="#Заболевания_желудка"/>
+  <осложнение rdf:resource="#Язва_желудка"/>
+  <поражает rdf:resource="#Желудок"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Язва_желудка">
+  <rdf:type rdf:resource="#Заболевания_желудка"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Желудок">
+  <rdf:type rdf:resource="#Пищеварительная_система"/>
+  <иметь_функцию rdf:resource="#Всасывательная"/>
+  <иметь_функцию rdf:resource="#Защитная"/>
+  <иметь_функцию rdf:resource="#Накопительная"/>
+  <иметь_функцию rdf:resource="#Секреторная"/>
+  <иметь_функцию rdf:resource="#Экскреторная"/>
+  <иметь_функцию rdf:resource="#Эндокринная"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Бактериальный_конъюктивит">
+  <rdf:type rdf:resource="#Бактериальные_инфекционные_заболевания"/>
+  <rdf:type rdf:resource="#Конъюктивит"/>
+  <поражает rdf:resource="#Конъюктива"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Конъюктива"/>
+
+<owl:NamedIndividual rdf:about="#Бронхи">
+  <rdf:type rdf:resource="#Дыхательная_система"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Варолиев_мозг"/>
+
+<owl:NamedIndividual rdf:about="#вены">
+  <rdf:type rdf:resource="#Сердечно-сосудистая_система"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Височная_кость"/>
+
+<owl:NamedIndividual rdf:about="#Внутреннее_ухо">
+  <состоит_из rdf:resource="#Полукружные_каналы"/>
+  <состоит_из rdf:resource="#Преддверие_уха"/>
+  <состоит_из rdf:resource="#Улитки"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Полукружные_каналы"/>
+
+<owl:NamedIndividual rdf:about="#Преддверие_уха"/>
+
+<owl:NamedIndividual rdf:about="#Улитки"/>
+
+<owl:NamedIndividual rdf:about="#Всасывательная">
+  <rdf:type rdf:resource="#Функции_органов"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Газообмен">
+  <rdf:type rdf:resource="#Функции_органов"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ганглии"/>
+
+<owl:NamedIndividual rdf:about="#Гладкие_мышцы"/>
+
+<owl:NamedIndividual rdf:about="#Глаза">
+  <rdf:type rdf:resource="#Органы_чувств"/>
+  <состоит_из rdf:resource="#Конъюктива"/>
+  <состоит_из rdf:resource="#Радужные_оболочки"/>
+  <состоит_из rdf:resource="#Роговицы"/>
+  <состоит_из rdf:resource="#Сетчатка"/>
+  <состоит_из rdf:resource="#Хрусталик"/>
+  <состоит_из rdf:resource="#Цилиарное_тело"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Радужные_оболочки"/>
+
+<owl:NamedIndividual rdf:about="#Роговицы"/>
+
+<owl:NamedIndividual rdf:about="#Сетчатка"/>
+
+<owl:NamedIndividual rdf:about="#Хрусталик"/>
+
+<owl:NamedIndividual rdf:about="#Цилиарное_тело"/>
+
+<owl:NamedIndividual rdf:about="#Глотка">
+  <rdf:type rdf:resource="#Дыхательная_система"/>
+  <rdf:type rdf:resource="#Пищеварительная_система"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Головной_мозг">
+  <rdf:type rdf:resource="#ЦНС"/>
+  <состоит_из rdf:resource="#Конечный_мозг"/>
+  <состоит_из rdf:resource="#Промежуточный_мозг"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Конечный_мозг">
+  <иметь_функцию rdf:resource="#Рефлекторная"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Промежуточный_мозг"/>
+
+<owl:NamedIndividual rdf:about="#Гортань">
+  <rdf:type rdf:resource="#Дыхательная_система"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Двенадцатиперстная_кишка"/>
+
+<owl:NamedIndividual rdf:about="#Двигательная">
+  <rdf:type rdf:resource="#Функции_органов"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Защитная">
+  <rdf:type rdf:resource="#Функции_органов"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Накопительная">
+  <rdf:type rdf:resource="#Функции_органов"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Секреторная">
+  <rdf:type rdf:resource="#Функции_органов"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Экскреторная">
+  <rdf:type rdf:resource="#Функции_органов"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Эндокринная">
+  <rdf:type rdf:resource="#Функции_органов"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Желчный_пузырь"/>
+
+<owl:NamedIndividual rdf:about="#Зубы"/>
+
+<owl:NamedIndividual rdf:about="#Инфекция_мочевыводящих_путей">
+  <rdf:type rdf:resource="#Бактериальные_инфекционные_заболевания"/>
+  <rdf:type rdf:resource="#Заболевания_мочеточников"/>
+  <поражает rdf:resource="#Мочеточники"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Мочеточники">
+  <rdf:type rdf:resource="#Мочевыделительная_система"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ионорегулирующая">
+  <rdf:type rdf:resource="#Функции_органов"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Капилляры">
+  <rdf:type rdf:resource="#Сердечно-сосудистая_система"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Кожа">
+  <rdf:type rdf:resource="#Покровная_система"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Рефлекторная">
+  <rdf:type rdf:resource="#Функции_органов"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Костный_мозг">
+  <rdf:type rdf:resource="#Лимфатическая_система"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Косточки"/>
+
+<owl:NamedIndividual rdf:about="#Кроветворная">
+  <rdf:type rdf:resource="#Функции_органов"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Легкие">
+  <rdf:type rdf:resource="#Дыхательная_система"/>
+  <иметь_функцию rdf:resource="#Газообмен"/>
+  <иметь_функцию rdf:resource="#Терморегуляция"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Терморегуляция">
+  <rdf:type rdf:resource="#Функции_органов"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Лимфатические_сосуды">
+  <rdf:type rdf:resource="#Лимфатическая_система"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Лимфопоэз">
+  <rdf:type rdf:resource="#Функции_органов"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Лимфоузлы">
+  <rdf:type rdf:resource="#Лимфатическая_система"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Менингококк">
+  <возбудитель rdf:resource="#Менингококковый_менингит"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Менингококковый_менингит">
+  <rdf:type rdf:resource="#Бактериальный_менингит"/>
+  <поражает rdf:resource="#Головной_мозг"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Метаболистическая">
+  <rdf:type rdf:resource="#Функции_органов"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Мозговой_ствол">
+  <rdf:type rdf:resource="#ЦНС"/>
+  <состоит_из rdf:resource="#Варолиев_мозг"/>
+  <состоит_из rdf:resource="#Продолговатый_мозг"/>
+  <состоит_из rdf:resource="#Средний_мозг"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Продолговатый_мозг"/>
+
+<owl:NamedIndividual rdf:about="#Средний_мозг"/>
+
+<owl:NamedIndividual rdf:about="#Мозжечок">
+  <rdf:type rdf:resource="#ЦНС"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Моторная">
+  <rdf:type rdf:resource="#Функции_органов"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Мочевой_пузырь">
+  <rdf:type rdf:resource="#Мочевыделительная_система"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Мультфокальный_остеомиелит">
+  <rdf:type rdf:resource="#Остеомиелит"/>
+  <поражает rdf:resource="#Скелет"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Скелет">
+  <rdf:type rdf:resource="#Опорно-двигательная_система"/>
+  <иметь_функцию rdf:resource="#Двигательная"/>
+  <иметь_функцию rdf:resource="#Защитная"/>
+  <иметь_функцию rdf:resource="#Кроветворная"/>
+  <иметь_функцию rdf:resource="#Метаболистическая"/>
+  <иметь_функцию rdf:resource="#Опорная"/>
+  <состоит_из rdf:resource="#Височная_кость"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Мышечная_система">
+  <rdf:type rdf:resource="#Опорно-двигательная_система"/>
+  <иметь_функцию rdf:resource="#Двигательная"/>
+  <иметь_функцию rdf:resource="#Защитная"/>
+  <иметь_функцию rdf:resource="#Формировочная"/>
+  <иметь_функцию rdf:resource="#Энергетическая"/>
+  <состоит_из rdf:resource="#Гладкие_мышцы"/>
+  <состоит_из rdf:resource="#Сердечные_мышцы"/>
+  <состоит_из rdf:resource="#Скелетные_мышцы"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Формировочная">
+  <rdf:type rdf:resource="#Функции_органов"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Энергетическая">
+  <rdf:type rdf:resource="#Функции_органов"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Сердечные_мышцы"/>
+
+<owl:NamedIndividual rdf:about="#Скелетные_мышцы"/>
+
+<owl:NamedIndividual rdf:about="#Наружное_ухо"/>
+
+<owl:NamedIndividual rdf:about="#Нервы">
+  <rdf:type rdf:resource="#ПНС"/>
+  <состоит_из rdf:resource="#Ганглии"/>
+  <состоит_из rdf:resource="#Спинномозговые_нервы"/>
+  <состоит_из rdf:resource="#Черепные_нервы"/>
+  <состоит_из rdf:resource="#Энтеральная_нервная_система"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Спинномозговые_нервы"/>
+
+<owl:NamedIndividual rdf:about="#Черепные_нервы"/>
+
+<owl:NamedIndividual rdf:about="#Энтеральная_нервная_система"/>
+
+<owl:NamedIndividual rdf:about="#Околоушные_слюнные_железы"/>
+
+<owl:NamedIndividual rdf:about="#Опорная">
+  <rdf:type rdf:resource="#Функции_органов"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Осморегулирующая">
+  <rdf:type rdf:resource="#Функции_органов"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Перепонка"/>
+
+<owl:NamedIndividual rdf:about="#Петрозит">
+  <rdf:type rdf:resource="#Остеомиелит"/>
+  <поражает rdf:resource="#Височная_кость"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Печень">
+  <rdf:type rdf:resource="#Пищеварительная_система"/>
+  <состоит_из rdf:resource="#Желчный_пузырь"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Пищевод">
+  <rdf:type rdf:resource="#Пищеварительная_система"/>
+  <иметь_функцию rdf:resource="#Моторная"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Подвздошная_кишка"/>
+
+<owl:NamedIndividual rdf:about="#Поджелудочная_железа">
+  <rdf:type rdf:resource="#Пищеварительная_система"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Подкожная_ткань">
+  <rdf:type rdf:resource="#Покровная_система"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Подчелюстные_слюнные_железы"/>
+
+<owl:NamedIndividual rdf:about="#Подъязычные_слюнные_железы"/>
+
+<owl:NamedIndividual rdf:about="#Полость_носа">
+  <rdf:type rdf:resource="#Дыхательная_система"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Почки">
+  <rdf:type rdf:resource="#Мочевыделительная_система"/>
+  <иметь_функцию rdf:resource="#Ионорегулирующая"/>
+  <иметь_функцию rdf:resource="#Кроветворная"/>
+  <иметь_функцию rdf:resource="#Метаболистическая"/>
+  <иметь_функцию rdf:resource="#Осморегулирующая"/>
+  <иметь_функцию rdf:resource="#Экскреторная"/>
+  <иметь_функцию rdf:resource="#Эндокринная"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Рот">
+  <rdf:type rdf:resource="#Пищеварительная_система"/>
+  <состоит_из rdf:resource="#Зубы"/>
+  <состоит_из rdf:resource="#Язык"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Язык">
+  <rdf:type rdf:resource="#Органы_чувств"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Связки">
+  <rdf:type rdf:resource="#Опорно-двигательная_система"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Селезёнка">
+  <rdf:type rdf:resource="#Лимфатическая_система"/>
+  <иметь_функцию rdf:resource="#Лимфопоэз"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Сердце">
+  <rdf:type rdf:resource="#Сердечно-сосудистая_система"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Слюнные_железы">
+  <rdf:type rdf:resource="#Пищеварительная_система"/>
+  <иметь_функцию rdf:resource="#Фильтрационная"/>
+  <иметь_функцию rdf:resource="#Экзокринная"/>
+  <иметь_функцию rdf:resource="#Экскреторная"/>
+  <иметь_функцию rdf:resource="#Эндокринная"/>
+  <состоит_из rdf:resource="#Околоушные_слюнные_железы"/>
+  <состоит_из rdf:resource="#Подчелюстные_слюнные_железы"/>
+  <состоит_из rdf:resource="#Подъязычные_слюнные_железы"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Фильтрационная">
+  <rdf:type rdf:resource="#Функции_органов"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Экзокринная">
+  <rdf:type rdf:resource="#Функции_органов"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Спинной_мозг">
+  <rdf:type rdf:resource="#ЦНС"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Среднее_ухо">
+  <состоит_из rdf:resource="#Косточки"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Стафилококк">
+  <rdf:type rdf:resource="#Кокки"/>
+  <возбудитель rdf:resource="#Бактериальный_конъюктивит"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Стрептококк">
+  <rdf:type rdf:resource="#Кокки"/>
+  <возбудитель rdf:resource="#Петрозит"/>
+  <возбудитель rdf:resource="#Стрептококковая_пневмония"/>
+  <возбудитель rdf:resource="#Стрептококковый_менингит"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Стрептококковая_пневмония">
+  <rdf:type rdf:resource="#Бактериальная_пневмония"/>
+  <поражает rdf:resource="#Легкие"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Стрептококковый_менингит">
+  <rdf:type rdf:resource="#Бактериальный_менингит"/>
+  <поражает rdf:resource="#Головной_мозг"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Суставы">
+  <rdf:type rdf:resource="#Опорно-двигательная_система"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Тимус">
+  <rdf:type rdf:resource="#Лимфатическая_система"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Толстая_кишка">
+  <rdf:type rdf:resource="#Пищеварительная_система"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Тонкая_кишка">
+  <rdf:type rdf:resource="#Пищеварительная_система"/>
+  <состоит_из rdf:resource="#Двенадцатиперстная_кишка"/>
+  <состоит_из rdf:resource="#Подвздошная_кишка"/>
+  <состоит_из rdf:resource="#Тощая_кишка"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Тощая_кишка"/>
+
+<owl:NamedIndividual rdf:about="#Трахея">
+  <rdf:type rdf:resource="#Дыхательная_система"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ухо">
+  <rdf:type rdf:resource="#Органы_чувств"/>
+  <состоит_из rdf:resource="#Внутреннее_ухо"/>
+  <состоит_из rdf:resource="#Наружное_ухо"/>
+  <состоит_из rdf:resource="#Перепонка"/>
+  <состоит_из rdf:resource="#Среднее_ухо"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Хеликобактер_пилори">
+  <rdf:type rdf:resource="#Спириллы"/>
+  <возбудитель rdf:resource="#Бактериальный_гастрит"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Хламидиозная_пневмония">
+  <rdf:type rdf:resource="#Бактериальная_пневмония"/>
+  <поражает rdf:resource="#Легкие"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Хламидия">
+  <rdf:type rdf:resource="#Кокки"/>
+  <возбудитель rdf:resource="#Хламидиозная_пневмония"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Гиперацидный_гастрит">
+  <rdf:type rdf:resource="#Заболевания_желудка"/>
+</owl:NamedIndividual>
+
+
+</rdf:RDF>
